@@ -312,10 +312,68 @@
             footer: "ผลลัพธ์การคำนวณใช้เพื่อการอ้างอิงเท่านั้น",
             linkAbout: "เกี่ยวกับเรา",
             linkPrivacy: "นโยบายความเป็นส่วนตัว"
+        },
+        ja: {
+            pageTitle: "2025 日本 消費税 還付計算機 - ショッピング免税限度額リアルタイム計算",
+            heroTitle: "2025 日本 消費税 還付計算機",
+            heroDesc: "リアルタイム為替換算対応、デパート手数料を精密に控除。",
+            auth: "公式ロジック",
+            upd: "更新日: 2025年12月",
+            amt: "購入総額",
+            incl: "税込価格",
+            excl: "税抜価格",
+            cat: "商品カテゴリー",
+            cat1: "一般物品",
+            cat1d: "衣類/家電 (10%)",
+            cat2: "消耗品",
+            cat2d: "化粧品/食品 (8%)",
+            store: "店舗タイプ",
+            store1: "独立店/ドラッグストア",
+            store1d: "100% 還付 (手数料なし)",
+            store2: "デパート",
+            store2d: "約 1.55% 手数料を控除",
+            res: "お受け取り見込み還付額",
+            curTarget: "JPY",
+            curName: "JPY 円",
+            copyBtn: "計算リンクをコピー",
+            copyOk: "リンクをコピーしました",
+            lowAmt: "免税基準の 5,000 円まで、あと ${diff} 円必要です",
+            highCap: "💡 最高 50 万円の免税限度額で計算されています",
+            adv0: "金額を入力して待ち時間のアドバイスを表示",
+            adv1: "アドバイス: 還付額が少ないため、行列が長い場合は見送りを推奨",
+            adv2: "アドバイス: 還付額が見合うため、還付手続きの待機を推奨",
+            adv3: "アドバイス: 還付額が大きいため、必ず還付手続きをお待ちください！",
+            adRate: "リアルタイム為替レート",
+            adJpy: "本日のJPY/JPY レートは約",
+            shareL: "LINEで共有",
+            seo: `<h2>2025 年 日本消費税還付に関するよくあるご質問</h2>
+                <p>日本国税庁の最新規定により、訪日外国人の方が日本でのお買い物で特定の条件を満たす場合、免税待遇を受けることができます。</p>
+                <h3>1. 免税の基準額はいくらですか？</h3>
+                <p>同一店舗で同日に<b>5,000 円</b>（税抜）以上お買い上げいただくと、免税手続きが可能です。当計算機はお客様の金額が基準に達しているか自動でチェックします。</p>
+                <h3>2. 一般物品と消耗品の違い</h3>
+                <p>一般物品（衣類、家電）の税率は 10%、消耗品（食品、化粧品）の税率は 8% です。消耗品は免税後、特別なパッケージに密封され、日本国内では開封・使用できません。</p>
+                <h3>3. なぜ還付額が 10% より少ないのですか？</h3>
+                <p>主要デパート（三越、高島屋など）では、通常約 <b>1.55%</b> のサービス手数料が差し引かれます。当ツールは「デパート」オプションに対応し、最終的なお受取額を自動計算します。</p>
+                <div class="formula-box">実際の還付額 = (税抜価格 × 税率) - (税抜価格 × 手数料率)</div>`,
+            footer: "計算結果は参考情報です。実際の還付額は店頭カウンターでの精算を準拠します。",
+            linkAbout: "当サイトについて",
+            linkPrivacy: "プライバシーポリシー"
         }
     };
+    // 根据URL路径自动判断语言的函数
+    function getLangFromPath() {
+        const path = window.location.pathname; // 例如 "/zhj/"
+        if (path.includes('/zhj/')) return 'zh';
+        if (path.includes('/zhf/')) return 'zhtw';
+        if (path.includes('/ja/')) return 'ja';
+        if (path.includes('/ko/')) return 'ko';
+        if (path.includes('/th/')) return 'th';
+        // 默认回退到英语
+        return 'en';
+    }
 
-    let state = { lang: 'en', mode: 'incl', rate: 0.10, fee: 0 };
+    // 初始化状态，语言由URL决定
+    let state = { lang: getLangFromPath(), mode: 'incl', rate: 0.10, fee: 0 };
 
     async function fetchLiveRate() {
         try {
@@ -334,8 +392,9 @@
     }
 
     function changeLang() {
-        state.lang = document.getElementById('langSelect').value;
-        const t = i18n[state.lang] || i18n.en;
+        // 直接使用已根据URL设置好的 state.lang
+        const langKey = state.lang;
+        const t = i18n[langKey] || i18n.en; // 获取对应语言的翻译文本
         
         // 动态修改网页标题
         document.title = t.pageTitle;
@@ -462,6 +521,10 @@
             navigator.clipboard.writeText(url); alert(i18n[state.lang].copyOk);
         }
     }
+    // 页面加载后，立即根据URL渲染对应语言
+    window.addEventListener('DOMContentLoaded', function() {
+        changeLang();
+    });
 
     fetchLiveRate();
     changeLang();
