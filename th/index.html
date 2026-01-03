@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<<<<<<< HEAD
     <meta property="og:title" content="เครื่องคำนวณขอคืนภาษีญี่ปุ่น 2026 (Japan Tax Refund Calculator)">
     <meta property="og:description" content="เที่ยวญี่ปุ่นต้องมี! คำนวณเงินคืนภาษีทันที รองรับเรทเงินปัจจุบันและหักค่าธรรมเนียมห้างอัตโนมัติ แม่นยำที่สุด">
     <meta property="og:image" content="https://refundjapan.com/images/og-ko.jpg">
 
     <title>เครื่องคำนวณขอคืนภาษีญี่ปุ่น 2026 - คู่มือช้อปปิ้งและขอคืนภาษี</title>
+=======
+    <meta property="og:title" content="Japan Tax Refund Calculator 2025">
+    <meta property="og:description" content="Instant tax refund calculation with live rates and fee detection.">
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+
+    <title>Japan Tax Refund Calculator 2025 - Official Duty-Free Guide</title>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
     <link rel="canonical" href="https://refundjapan.com/th/" />
     <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
     <link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
@@ -168,7 +176,11 @@
 
 <div class="app">
     <div class="auth-badge">
+<<<<<<< HEAD
         <span id="t-upd">อัปเดต: ธ.ค. 2026</span> • <span id="t-auth">สูตรคำนวณทางการ</span>
+=======
+        <span id="t-upd">Updated: Dec 2025</span> • <span id="t-auth">Official Logic</span>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
     </div>
 
     <header>
@@ -176,13 +188,22 @@
     </header>
 
     <div class="hero">
+<<<<<<< HEAD
         <h1 id="t-hero-title">เครื่องคำนวณ Tax Refund ญี่ปุ่น 2026</h1>
         <p id="t-hero-desc">ใช้อัตราแลกเปลี่ยนจริง พร้อมระบบหักค่าธรรมเนียมห้างฯ อัตโนมัติ</p>
+=======
+        <h1 id="t-hero-title">Japan Tax Refund Calculator 2025</h1>
+        <p id="t-hero-desc">Live exchange rates and department store fee deduction included.</p>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
     </div>
 
     <a href="#" class="ad-banner">
         <div>
+<<<<<<< HEAD
             <b id="t-ad-rate">เรทแลกเปลี่ยนจริง</b>
+=======
+            <b id="t-ad-rate">Live Exchange Rate</b>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             <span id="t-ad-jpy">1 JPY ≈</span> <span id="live-rate">0.0068</span>
         </div>
         <div style="font-size: 20px;">➔</div>
@@ -190,15 +211,23 @@
 
     <div class="card" id="inputCard">
         <div class="label-row">
+<<<<<<< HEAD
             <label id="t-label-amt" style="font-weight: 800; font-size: 14px;">ยอดซื้อ (เยน)</label>
             <div class="tax-toggle" id="taxMode">
                 <span class="active" data-mode="incl" id="t-incl">รวมภาษี</span>
                 <span data-mode="excl" id="t-excl">ไม่รวมภาษี</span>
+=======
+            <label id="t-label-amt" style="font-weight: 800; font-size: 14px;">PURCHASE AMOUNT</label>
+            <div class="tax-toggle" id="taxMode">
+                <span class="active" data-mode="incl" id="t-incl">Tax Incl.</span>
+                <span data-mode="excl" id="t-excl">Tax Excl.</span>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             </div>
         </div>
         <input type="number" id="amtInput" placeholder="0" inputmode="decimal">
         <div id="threshold-msg" class="threshold-msg"></div>
 
+<<<<<<< HEAD
         <label id="t-label-cat" style="display:block; margin: 24px 0 10px; font-weight: 800; font-size: 13px;">ประเภทสินค้า</label>
         <div class="seg-grid" id="catGroup">
             <div class="seg-item active" data-rate="0.10">
@@ -216,11 +245,31 @@
             </div>
             <div class="seg-item" data-fee="0.0155">
                 <b id="t-store-2">ห้างฯ (Department Store)</b><small id="t-store-2-d">หักค่าธรรมเนียม ~1.55%</small>
+=======
+        <label id="t-label-cat" style="display:block; margin: 24px 0 10px; font-weight: 800; font-size: 13px;">ITEM CATEGORY</label>
+        <div class="seg-grid" id="catGroup">
+            <div class="seg-item active" data-rate="0.10">
+                <b id="t-cat-1">General</b><small id="t-cat-1-d">Clothes/Electronics</small>
+            </div>
+            <div class="seg-item" data-rate="0.08">
+                <b id="t-cat-2">Consumables</b><small id="t-cat-2-d">Food/Cosmetics</small>
+            </div>
+        </div>
+
+        <label id="t-label-store" style="display:block; margin: 20px 0 10px; font-weight: 800; font-size: 13px;">SHOP TYPE</label>
+        <div class="seg-grid" id="storeGroup">
+            <div class="seg-item active" data-fee="0">
+                <b id="t-store-1">Standard Shop</b><small id="t-store-1-d">0 Handling Fee</small>
+            </div>
+            <div class="seg-item" data-fee="0.0155">
+                <b id="t-store-2">Dept. Store</b><small id="t-store-2-d">Deducts ~1.55%</small>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             </div>
         </div>
     </div>
 
     <div class="res-panel" id="resPanel">
+<<<<<<< HEAD
         <div id="t-res-label" style="font-weight: 700; font-size: 13px; text-transform: uppercase;">ยอดเงินคืนโดยประมาณ</div>
         <div class="res-val">¥ <span id="res-jpy">0</span></div>
         <div class="res-cur">
@@ -232,11 +281,25 @@
     <div class="share-stack">
         <button class="share-btn line" id="t-share-line" onclick="socialShare('line')">แชร์ผ่าน LINE</button>
         <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">คัดลอกลิงก์คำนวณ</button>
+=======
+        <div id="t-res-label" style="font-weight: 700; font-size: 13px; text-transform: uppercase;">Estimated Actual Refund</div>
+        <div class="res-val">¥ <span id="res-jpy">0</span></div>
+        <div class="res-cur">
+            <div>≈ <span id="res-c1">0</span> <span id="cur-1">USD</span></div>
+        </div>
+        <div class="advice-box" id="advice-box">Enter amount for queueing advice</div>
+    </div>
+
+    <div class="share-stack">
+        <button class="share-btn line" id="t-share-line" onclick="socialShare('line')">Share on LINE</button>
+        <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">Copy Calculation Link</button>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
     </div>
 
     <section class="seo-box" id="seoArea"></section>
 
     <div class="footer-links" style="text-align: center; margin-top: 20px;">
+<<<<<<< HEAD
         <a href="/th/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 12px; margin: 0 8px;">เกี่ยวกับเรา</a>
         <span style="color: #D1D1D6;">|</span>
         <a href="/th/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 12px; margin: 0 8px;">นโยบายความเป็นส่วนตัว</a>
@@ -246,6 +309,17 @@
 
     <div class="footer-disclaimer" id="t-disclaimer-footer">
         ผลการคำนวณเพื่อการอ้างอิงเบื้องต้นเท่านั้น
+=======
+        <a href="/th/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 12px; margin: 0 8px;">About Us</a>
+        <span style="color: #D1D1D6;">|</span>
+        <a href="/th/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 12px; margin: 0 8px;">Privacy Policy</a>
+        <span style="color: #D1D1D6;">|</span>
+        <a href="sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 12px; margin: 0 8px;">Sitemap</a>
+    </div>
+
+    <div class="footer-disclaimer" id="t-disclaimer-footer">
+        Calculation results are for reference only.
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
     </div>
 </div>
 
@@ -256,17 +330,28 @@
 
     const i18n = {
         zh: {
+<<<<<<< HEAD
             pageTitle: "2026 日本退税计算器 - 购物免税额度实时计算",
             heroTitle: "2026 日本退税计算器",
             heroDesc: "支持实时汇率转换与百货公司手续费精准扣除。",
             auth: "官方算法", upd: "更新于: 2026年1月", amt: "购买总额", incl: "含税价", excl: "不含税", cat: "商品类型", cat1: "一般物品", cat1d: "服装/电器 (10%)", cat2: "消耗品", cat2d: "药妆/食品 (8%)",
+=======
+            pageTitle: "2025 日本退税计算器 - 购物免税额度实时计算",
+            heroTitle: "2025 日本退税计算器",
+            heroDesc: "支持实时汇率转换与百货公司手续费精准扣除。",
+            auth: "官方算法", upd: "更新于: 2025年12月", amt: "购买总额", incl: "含税价", excl: "不含税", cat: "商品类型", cat1: "一般物品", cat1d: "服装/电器 (10%)", cat2: "消耗品", cat2d: "药妆/食品 (8%)",
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             store: "店铺类型", store1: "独立店/药妆店", store1d: "100% 退税 (无费用)", store2: "百货公司", store2d: "收取 ~1.55% 手续费", res: "预计实到手退税额",
             curTarget: "CNY", curName: "CNY 人民币", copyBtn: "复制计算链接", copyOk: "链接已复制",
             lowAmt: "还差 ${diff} JPY 即可达到 5,000 JPY 退税门槛", 
             highCap: "💡 已按最高 50 万日元免税额度计算",
             adv0: "输入金额以获取排队建议", adv1: "提示：金额较小，排队时间长建议放弃", adv2: "提示：金额适中，建议排队退税", adv3: "提示：金额很大，务必排队退税！",
             adRate: "实时汇率参考", adJpy: "今日日元兑人民币约为", shareL: "在 LINE 上分享",
+<<<<<<< HEAD
             seo: `<h2>2026 日本消费税退税规则 FAQ</h2>
+=======
+            seo: `<h2>2025 日本消费税退税规则 FAQ</h2>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
                 <p>根据日本国税厅(NTA)最新规定，外国游客在日本购物满足特定条件即可享受免税待遇。</p>
                 <h3>1. 免税门槛是多少？</h3>
                 <p>在同一家店同一天购物满 <b>5,000 日元</b>（不含税）即可办理退税。本计算器会自动检测您的金额是否达标。</p>
@@ -288,17 +373,28 @@
             linkPrivacy: "隐私政策"
         },
         zhtw: {
+<<<<<<< HEAD
             pageTitle: "2026 日本退稅計算器 - 日本購物免稅額度計算工具",
             heroTitle: "2026 日本退稅計算器",
             heroDesc: "支持實時匯率轉換與百貨公司手續費精準扣除。",
             auth: "官方算法", upd: "更新於: 2026年1月", amt: "購買總額", incl: "含稅價", excl: "不含稅", cat: "商品類型", cat1: "一般物品", cat1d: "服裝/電器 (10%)", cat2: "消耗品", cat2d: "藥妝/食品 (8%)",
+=======
+            pageTitle: "2025 日本退稅計算器 - 日本購物免稅額度計算工具",
+            heroTitle: "2025 日本退稅計算器",
+            heroDesc: "支持實時匯率轉換與百貨公司手續費精準扣除。",
+            auth: "官方算法", upd: "更新於: 2025年12月", amt: "購買總額", incl: "含稅價", excl: "不含稅", cat: "商品類型", cat1: "一般物品", cat1d: "服裝/電器 (10%)", cat2: "消耗品", cat2d: "藥妝/食品 (8%)",
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             store: "店鋪類型", store1: "獨立店/藥妝店", store1d: "100% 退稅 (無費用)", store2: "百貨公司", store2d: "收取 ~1.55% 手續費", res: "預計實到手退稅額",
             curTarget: "HKD", curName: "HKD 港幣", copyBtn: "複製計算連結", copyOk: "連結已複製",
             lowAmt: "還差 ${diff} JPY 即可達到 5,000 JPY 退稅門檻", 
             highCap: "💡 已按最高 50 萬日圓免稅額度計算",
             adv0: "輸入金額以獲取排隊建議", adv1: "提示：金額較小，排隊時間長建議放棄", adv2: "提示：金額適中，建議排隊退稅", adv3: "提示：金額很大，務必排隊退稅！",
             adRate: "實時匯率參考", adJpy: "今日日圓兌港幣約為", shareL: "在 LINE 上分享",
+<<<<<<< HEAD
             seo: `<h2>2026 日本消費稅退稅規則 FAQ</h2>
+=======
+            seo: `<h2>2025 日本消費稅退稅規則 FAQ</h2>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
                 <p><strong>根據日本國稅廳(NTA)最新規定</strong>，外國遊客在日本購物滿足特定條件即可享受免稅待遇。</p>
                 <h3>1. 免稅門檻是多少？</h3>
                 <p><strong>根據日本國稅廳(NTA)最新規定</strong>，在同一家店同一天購物滿 <b>5,000 日圓</b>（不含稅）即可辦理退稅。本計算器會自動檢測您的金額是否達標。</p>
@@ -320,17 +416,28 @@
             linkPrivacy: "隱私政策"
         },
         en: {
+<<<<<<< HEAD
             pageTitle: "Japan Tax Refund Calculator 2026 - Official Duty-Free Guide",
             heroTitle: "Japan Tax Refund Calculator 2026",
             heroDesc: "Instant calculations with live exchange rates and department store service fees.",
             auth: "Official Logic", upd: "Updated: Dec 2026", amt: "Total Amount", incl: "Tax Incl.", excl: "Tax Excl.", cat: "Category", cat1: "General Goods", cat1d: "Clothing/Tech (10%)", cat2: "Consumables", cat2d: "Food/Cosme (8%)",
+=======
+            pageTitle: "Japan Tax Refund Calculator 2025 - Official Duty-Free Guide",
+            heroTitle: "Japan Tax Refund Calculator 2025",
+            heroDesc: "Instant calculations with live exchange rates and department store service fees.",
+            auth: "Official Logic", upd: "Updated: Dec 2025", amt: "Total Amount", incl: "Tax Incl.", excl: "Tax Excl.", cat: "Category", cat1: "General Goods", cat1d: "Clothing/Tech (10%)", cat2: "Consumables", cat2d: "Food/Cosme (8%)",
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             store: "Store Type", store1: "Standard Shop", store1d: "Full Refund (0 Fee)", store2: "Dept Store", store2d: "Service Fee (~1.55%)", res: "Net Refund Amount",
             curTarget: "USD", curName: "USD Dollar", copyBtn: "Copy Link", copyOk: "Copied!",
             lowAmt: "Need ¥${diff} more to reach ¥5,000 threshold", 
             highCap: "💡 Capped at ¥500k tax-free limit",
             adv0: "Enter amount for queueing advice", adv1: "Advice: Low refund, skip if queue is long", adv2: "Advice: Worth waiting for refund", adv3: "Advice: Significant refund, must queue!",
             adRate: "Live Exchange Rate", adJpy: "1 JPY ≈ ", shareL: "Share on LINE",
+<<<<<<< HEAD
             seo: `<h2>Japan Tax Refund Guide 2026</h2>
+=======
+            seo: `<h2>Japan Tax Refund Guide 2025</h2>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
                 <p><strong>According to the latest regulations from the National Tax Agency (NTA) of Japan</strong>, international visitors can enjoy tax-exempt shopping under specific conditions.</p>
                 <h3>1. Minimum Purchase</h3>
                 <p><strong>According to the latest regulations from the National Tax Agency (NTA) of Japan</strong>, you must spend at least <b>¥5,000</b> (tax excl.) in a single store on the same day to qualify for a tax refund.</p>
@@ -352,17 +459,28 @@
             linkPrivacy: "Privacy Policy"
         },
         ko: {
+<<<<<<< HEAD
             pageTitle: "2026 일본 면세 계산기 - 일본 여행 쇼핑 세금 환급 도구",
             heroTitle: "2026 일본 면세 계산기",
             heroDesc: "실시간 환율 및 백화점 수수료 자동 계산 기능 포함.",
             auth: "공식 로직", upd: "업데이트: 2026년 12월", amt: "구매 총액", incl: "세금 포함", excl: "세금 제외", cat: "상품 유형", cat1: "일반 물품", cat1d: "의류/가전 (10%)", cat2: "소모품", cat2d: "약국/식품 (8%)",
+=======
+            pageTitle: "2025 일본 면세 계산기 - 일본 여행 쇼핑 세금 환급 도구",
+            heroTitle: "2025 일본 면세 계산기",
+            heroDesc: "실시간 환율 및 백화점 수수료 자동 계산 기능 포함.",
+            auth: "공식 로직", upd: "업데이트: 2025년 12월", amt: "구매 총액", incl: "세금 포함", excl: "세금 제외", cat: "상품 유형", cat1: "일반 물품", cat1d: "의류/가전 (10%)", cat2: "소모품", cat2d: "약국/식품 (8%)",
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             store: "매장 유형", store1: "일반 매장", store1d: "100% 환급 (수수료 없음)", store2: "백화점", store2d: "약 1.55% 수수료 공제", res: "예상 실제 환급액",
             curTarget: "KRW", curName: "KRW 원", copyBtn: "링크 복사", copyOk: "복사되었습니다!",
             lowAmt: "면세 기준인 5,000엔까지 ${diff}엔 더 필요합니다", 
             highCap: "💡 최대 50만엔 면세 한도로 계산되었습니다",
             adv0: "대기 조언을 위해 금액을 입력하세요", adv1: "조언: 환급액이 적으니 대기가 길면 포기하세요", adv2: "조언: 환급받으러 줄을 서는 것을 추천합니다", adv3: "조언: 환급액이 크니 반드시 줄을 서세요!",
             adRate: "실시간 환율 정보", adJpy: "오늘의 JPY/KRW 환율은 약", shareL: "LINE으로 공유",
+<<<<<<< HEAD
             seo: `<h2>일본 소비세 환급 FAQ (2026)</h2>
+=======
+            seo: `<h2>일본 소비세 환급 FAQ (2025)</h2>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
                 <p><strong>일본 국세청(NTA)의 최신 규정에 따르면</strong>, 외국인 관광객은 일본에서 쇼핑 시 특정 조건을 충족하면 면세 혜택을 받을 수 있습니다.</p>
                 <h3>1. 면세 기준은 얼마인가요？</h3>
                 <p><strong>일본 국세청(NTA)의 최신 규정에 따르면</strong>, 동일한 매장에서 하루 동안 <b>5,000엔</b>(세금 제외) 이상 구매 시 세금 환급을 받을 수 있습니다.</p>
@@ -383,17 +501,28 @@
             linkPrivacy: "개인정보처리방침"
         },
         th: {
+<<<<<<< HEAD
             pageTitle: "เครื่องคำนวณคืนภาษีญี่ปุ่น 2026 - คู่มือซื้อของปลอดภาษี",
             heroTitle: "เครื่องคำนวณการคืนภาษีญี่ปุ่น 2026",
             heroDesc: "คำนวณทันทีพร้อมอัตราแลกเปลี่ยนปัจจุบันและค่าธรรมเนียมห้างสรรพสินค้า",
             auth: "ตรรกะทางการ", upd: "อัปเดตเมื่อ: ธ.ค. 2026", amt: "ยอดซื้อทั้งหมด", incl: "รวมภาษี", excl: "ไม่รวมภาษี", cat: "ประเภทสินค้า", cat1: "สินค้าทั่วไป", cat1d: "เสื้อผ้า/เครื่องใช้ไฟฟ้า (10%)", cat2: "สินค้าอุปโภคบริโภค", cat2d: "ยา/อาหาร (8%)",
+=======
+            pageTitle: "เครื่องคำนวณคืนภาษีญี่ปุ่น 2025 - คู่มือซื้อของปลอดภาษี",
+            heroTitle: "เครื่องคำนวณการคืนภาษีญี่ปุ่น 2025",
+            heroDesc: "คำนวณทันทีพร้อมอัตราแลกเปลี่ยนปัจจุบันและค่าธรรมเนียมห้างสรรพสินค้า",
+            auth: "ตรรกะทางการ", upd: "อัปเดตเมื่อ: ธ.ค. 2025", amt: "ยอดซื้อทั้งหมด", incl: "รวมภาษี", excl: "ไม่รวมภาษี", cat: "ประเภทสินค้า", cat1: "สินค้าทั่วไป", cat1d: "เสื้อผ้า/เครื่องใช้ไฟฟ้า (10%)", cat2: "สินค้าอุปโภคบริโภค", cat2d: "ยา/อาหาร (8%)",
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             store: "ประเภทร้านค้า", store1: "ร้านค้าทั่วไป", store1d: "คืนภาษี 100% (ไม่มีค่าธรรมเนียม)", store2: "ห้างสรรพสินค้า", store2d: "หักค่าธรรมเนียม ~1.55%", res: "ยอดคืนภาษีสุทธิที่คาดว่าจะได้รับ",
             curTarget: "THB", curName: "THB บาท", copyBtn: "คัดลอกลิงก์", copyOk: "คัดลอกแล้ว!",
             lowAmt: "ยังขาดอีก ${diff} เยน เพื่อให้ถึงเกณฑ์ 5,000 เยน", 
             highCap: "💡 คำนวณตามเพดานสูงสุด 500,000 เยน",
             adv0: "กรอกจำนวนเงินเพื่อรับคำแนะนำในการต่อคิว", adv1: "คำแนะนำ: ยอดน้อย หากคิวยาวแนะนำให้ข้าม", adv2: "คำแนะนำ: แนะนำให้รอคิวคืนภาษี", adv3: "คำแนะนำ: ยอดเยอะมาก ต้องรอคิวคืนภาษี!",
             adRate: "อัตราแลกเปลี่ยนปัจจุบัน", adJpy: "วันนี้ 1 เยน ประมาณ", shareL: "แชร์ผ่าน LINE",
+<<<<<<< HEAD
             seo: `<h2>คำถามที่พบบ่อยเกี่ยวกับการคืนภาษีญี่ปุ่น 2026</h2>
+=======
+            seo: `<h2>คำถามที่พบบ่อยเกี่ยวกับการคืนภาษีญี่ปุ่น 2025</h2>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
                 <p><strong>ตามข้อกำหนดล่าสุดของกรมสรรพากร (NTA) ประเทศญี่ปุ่น</strong> นักท่องเที่ยวต่างชาติสามารถเพลิดเพลินกับการยกเว้นภาษีเมื่อช้อปปิ้งในญี่ปุ่นหากเป็นไปตามเงื่อนไขที่กำหนด</p>
                 <h3>1. เกณฑ์ขั้นต่ำในการยกเว้นภาษีคือเท่าไหร่？</h3>
                 <p><strong>ตามข้อกำหนดล่าสุดของกรมสรรพากร (NTA) ประเทศญี่ปุ่น</strong> คุณต้องซื้อสินค้าครบ <b>5,000 เยน</b> (ไม่รวมภาษี) ในร้านเดียวกันภายในวันเดียวกันเพื่อขอคืนภาษี</p>
@@ -415,11 +544,19 @@
             linkPrivacy: "นโยบายความเป็นส่วนตัว"
         },
         ja: {
+<<<<<<< HEAD
             pageTitle: "2026 日本 消費税 還付計算機 - ショッピング免税限度額リアルタイム計算",
             heroTitle: "2026 日本 消費税 還付計算機",
             heroDesc: "リアルタイム為替換算対応、デパート手数料を精密に控除。",
             auth: "公式ロジック",
             upd: "更新日: 2026年1月",
+=======
+            pageTitle: "2025 日本 消費税 還付計算機 - ショッピング免税限度額リアルタイム計算",
+            heroTitle: "2025 日本 消費税 還付計算機",
+            heroDesc: "リアルタイム為替換算対応、デパート手数料を精密に控除。",
+            auth: "公式ロジック",
+            upd: "更新日: 2025年12月",
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
             amt: "購入総額",
             incl: "税込価格",
             excl: "税抜価格",
@@ -447,7 +584,11 @@
             adRate: "リアルタイム為替レート",
             adJpy: "本日のJPY/JPY レートは約",
             shareL: "LINEで共有",
+<<<<<<< HEAD
             seo: `<h2>2026 年 日本消費税還付に関するよくあるご質問</h2>
+=======
+            seo: `<h2>2025 年 日本消費税還付に関するよくあるご質問</h2>
+>>>>>>> 7e9e154a5d5b37fd6a7fdcc3a30ca48e9822c56d
                 <p><strong>日本国税庁(NTA)の最新規定によると</strong>、訪日外国人の方が日本でのお買い物で特定の条件を満たす場合、免税待遇を受けることができます。</p>
                 <h3>1. 免税の基準額はいくらですか？</h3>
                 <p><strong>日本国税庁(NTA)の最新規定によると</strong>、同一店舗で同日に<b>5,000 円</b>（税抜）以上お買い上げいただくと、免税手続きが可能です。</p>
