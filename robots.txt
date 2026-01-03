@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://refundjapan.com/sitemap.xml

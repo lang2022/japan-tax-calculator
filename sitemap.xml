@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- 简体中文 (zh-Hans) -->
+    <url>
+        <loc>https://refundjapan.com/zhj/</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/zhj/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/about.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/about.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/about.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/about.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/zhj/privacy.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/privacy.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <!-- 繁体中文 (zh-Hant) -->
+    <url>
+        <loc>https://refundjapan.com/zhf/</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/zhf/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/about.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/about.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/about.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/about.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/zhf/privacy.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/privacy.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <!-- 英文 (English) -->
+    <url>
+        <loc>https://refundjapan.com/en/</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/en/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/about.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/about.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/about.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/about.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/en/privacy.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/privacy.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <!-- 日文 (日本語) -->
+    <url>
+        <loc>https://refundjapan.com/ja/</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/ja/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/about.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/about.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/about.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/about.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/ja/privacy.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/privacy.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <!-- 韩文 (한국어) -->
+    <url>
+        <loc>https://refundjapan.com/ko/</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+   <url>
+        <loc>https://refundjapan.com/ko/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/about.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/about.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/about.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/about.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/ko/privacy.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/privacy.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <!-- 泰文 (ไทย) -->
+    <url>
+        <loc>https://refundjapan.com/th/</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+   <url>
+        <loc>https://refundjapan.com/th/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/about.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/about.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/about.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/about.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://refundjapan.com/th/privacy.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/privacy.html" />
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+</urlset>
