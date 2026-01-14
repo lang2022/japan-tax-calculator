@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description" content="Instant tax refund calculation with live rates and fee detection.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="Japan Tax Refund Calculator 2026">
+    <meta property="og:description" content="Instant tax refund calculation with live rates and fee detection.">
+    <meta property="og:image" content="/assets/og/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <title>Japan Tax Refund Calculator 2026 - Official Duty-Free Guide</title>
+    <link rel="canonical" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
+    <link rel="alternate" hreflang="en" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
+    <link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
+    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #E63946;
+            --secondary: #457B9D;
+            --warning: #f5222d;
+            --info: #1890ff;
+            --bg: #F8F9FA;
+            --card: #FFFFFF;
+            --text: #1C1C1E;
+            --text-sec: #636366;
+            --radius: 16px;
+        }
+
+        body { font-family: 'Inter', 'Noto Sans SC', 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.5; }
+        .app { max-width: 550px; margin: 0 auto; padding: 16px; }
+
+        .auth-badge { 
+            background: #E1E8ED; color: var(--secondary); font-size: 11px; font-weight: 700;
+            padding: 4px 10px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;
+            margin-bottom: 15px; text-transform: uppercase;
+        }
+
+        header { display: flex; justify-content: space-between; align-items: center; padding: 10px 0 10px; }
+        .logo { font-size: 18px; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+        
+        /* Hero Section 样式 */
+        .hero { margin: 15px 0 25px; }
+        /* 优化主标题 */
+        .hero h1 {
+            font-size: 32px; /* 更大一点 */
+            font-weight: 800;
+            margin: 0 0 10px;
+            color: var(--text); /* 使用深色 */
+            line-height: 1.2;
+            /* 可以添加一点品牌色 */
+            background: linear-gradient(135deg, var(--primary) 0%, #ff7b54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        /* 优化副标题/描述 */
+        .hero p {
+            font-size: 15px; /* 稍大一点，更易读 */
+            color: var(--text-sec);
+            margin: 0;
+            font-weight: 500;
+            line-height: 1.5;
+            max-width: 90%; /* 控制宽度，避免过长 */
+        }
+
+        .ad-banner {
+            background: linear-gradient(135deg, #fffcf0 0%, #fff5d1 100%);
+            border: 1px solid #ffe58f; border-radius: 1px; padding: 1px 16px;
+            margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;
+            text-decoration: none; color: #856404; font-size: 13px;
+        }
+        .ad-banner b { color: #d46b08; display: block; }
+
+        .card { background: var(--card); border-radius: var(--radius); padding: 24px; box-shadow: 0 2px 1px rgba(0,0,0,0.04); margin-bottom: 20px; border: 1px solid #E5E5EA; transition: all 0.3s; }
+        .card.alert-active { border-color: var(--warning); box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1); }
+        .card.info-active { border-color: var(--info); box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.1); }
+
+        .label-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px; }
+        .tax-toggle { display: flex; background: #E5E5EA; padding: 2px; border-radius: 8px; }
+        .tax-toggle span { padding: 4px 10px; font-size: 11px; cursor: pointer; border-radius: 6px; font-weight: 700; color: var(--text-sec); }
+        .tax-toggle span.active { background: white; color: var(--primary); box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+        input { width: 100%; border: 2px solid #F2F2F7; border-radius: 1px; padding: 14px; font-size: 32px; font-weight: 800; outline: none; box-sizing: border-box; color: var(--primary); transition: border-color 0.3s; }
+        
+        .threshold-msg { font-size: 13px; font-weight: 700; margin-top: 8px; display: none; }
+        .msg-warning { color: var(--warning); }
+        .msg-info { color: var(--info); }
+
+        .seg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .seg-item { border: 1px solid #E5E5EA; padding: 1px; border-radius: 1px; text-align: center; cursor: pointer; transition: all 0.2s; }
+        .seg-item.active { border-color: var(--primary); background: #FFF5F5; color: var(--primary); }
+        .seg-item b { display: block; font-size: 14px; margin-bottom: 2px; }
+        .seg-item small { font-size: 10px; opacity: 0.8; font-weight: 500; }
+
+        .res-panel { background: var(--primary); color: white; border-radius: var(--radius); padding: 25px; text-align: center; margin-bottom: 20px; transition: opacity 0.3s; }
+        .res-panel.dim { opacity: 0.3; filter: grayscale(1); }
+        .res-val { font-size: 44px; font-weight: 800; margin: 5px 0; letter-spacing: -1px; }
+        .res-cur { font-size: 14px; opacity: 0.9; display: flex; flex-direction: column; gap: 4px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px; margin-top: 15px; }
+
+        .advice-box { background: rgba(255,255,255,0.15); border-radius: 8px; padding: 10px; margin-top: 15px; font-size: 13px; font-weight: 600; }
+
+        .share-stack { display: flex; flex-direction: column; gap: 8px; margin: 20px 0; }
+        .share-btn { width: 100%; padding: 14px; border-radius: 1px; display: flex; align-items: center; justify-content: center; color: white; cursor: pointer; border: none; font-size: 13px; font-weight: 700; gap: 10px; }
+        .line { background: #00B900; }
+        .copy-link { background: #F2F2F7; color: var(--text); border: 1px solid #D1D1D6; }
+
+        /* SEO Box 保持原样 */
+        .seo-box { padding: 20px 10px; border-top: 1px solid #E5E5EA; }
+        .seo-box h2 { color: var(--text); font-size: 18px; margin-top: 30px; margin-bottom: 1px; font-weight: 800; }
+        .seo-box p { font-size: 14px; color: var(--text-sec); margin-bottom: 15px; }
+        .formula-box { background: #F2F2F7; padding: 15px; border-radius: 10px; font-family: monospace; font-size: 13px; margin: 10px 0; color: var(--secondary); }
+        .authority-link { color: var(--secondary); font-weight: 700; text-decoration: underline; }
+
+        .footer-disclaimer { font-size: 11px; color: var(--text-sec); text-align: center; margin: 20px 0 40px; line-height: 1.4; padding: 0 20px; }
+
+        .fab-reset { position: fixed; bottom: 30px; right: 20px; background: var(--text); color: white; width: 50px; height: 50px; border-radius: 50%; border: none; box-shadow: 0 4px 1px rgba(0,0,0,0.2); font-size: 20px; cursor: pointer; z-index: 100; }
+        /* 官方链接模块的样式 */
+        .authority-module {
+            background-color: #f8f9fa; /* 浅灰色背景，与正文区分 */
+            border-left: 4px solid #457B9D; /* 左侧蓝色装饰条，与你网站的secondary颜色呼应 */
+            padding: 1rem 1.5rem;
+            margin-top: 2rem;
+            border-radius: 0 8px 8px 0; /* 右侧圆角 */
+        }
+        .authority-module h3 {
+            color: #1D3557; /* 深蓝色，显得稳重 */
+            margin-top: 0;
+        }
+        .authority-module ul {
+            padding-left: 1.2rem;
+        }
+        .authority-module a {
+            color: #457B9D; /* 使用secondary颜色 */
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .authority-module a:hover {
+            text-decoration: underline;
+            color: #E63946; /* 悬停时使用primary红色，增加互动性 */
+        }
+        .authority-module small {
+            color: #636366; /* 与你的--text-sec颜色一致 */
+            display: block;
+            margin-top: 0.5rem;
+        }
+   
+   </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6231P53QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6231P53QB');
+    </script>
+</head>
+<body>
+
+<div class="app">
+    <div class="auth-badge">
+        <span id="t-upd">Updated: Dec 2026</span> • <span id="t-auth">Official Logic</span>
+    </div>
+
+    <header>
+        <a href="/en/" class="logo" style="color: inherit; text-decoration: none;">TAXFREE.JP</a>
+    </header>
+
+    <div class="hero">
+        <h1 id="t-hero-title">Japan Tax Refund Calculator 2026</h1>
+        <p id="t-hero-desc">Live exchange rates and department store fee deduction included.</p>
+    </div>
+
+    <a href="#" class="ad-banner">
+        <div>
+            <b id="t-ad-rate">Live Exchange Rate</b>
+            <span id="t-ad-jpy">1 JPY ≈</span> <span id="live-rate">0.0068</span>
+        </div>
+        <div style="font-size: 20px;">➔</div>
+    </a>
+
+    <div class="card" id="inputCard">
+        <div class="label-row">
+            <label id="t-label-amt" style="font-weight: 800; font-size: 14px;">PURCHASE AMOUNT</label>
+            <div class="tax-toggle" id="taxMode">
+                <span class="active" data-mode="incl" id="t-incl">Tax Incl.</span>
+                <span data-mode="excl" id="t-excl">Tax Excl.</span>
+            </div>
+        </div>
+        <input type="number" id="amtInput" placeholder="0" inputmode="decimal">
+        <div id="threshold-msg" class="threshold-msg"></div>
+
+        <label id="t-label-cat" style="display:block; margin: 24px 0 10px; font-weight: 800; font-size: 13px;">ITEM CATEGORY</label>
+        <div class="seg-grid" id="catGroup">
+            <div class="seg-item active" data-rate="0.10">
+                <b id="t-cat-1">General</b><small id="t-cat-1-d">Clothes/Electronics</small>
+            </div>
+            <div class="seg-item" data-rate="0.08">
+                <b id="t-cat-2">Consumables</b><small id="t-cat-2-d">Food/Cosmetics</small>
+            </div>
+        </div>
+
+        <label id="t-label-store" style="display:block; margin: 20px 0 10px; font-weight: 800; font-size: 13px;">SHOP TYPE</label>
+        <div class="seg-grid" id="storeGroup">
+            <div class="seg-item active" data-fee="0">
+                <b id="t-store-1">Standard Shop</b><small id="t-store-1-d">0 Handling Fee</small>
+            </div>
+            <div class="seg-item" data-fee="0.0155">
+                <b id="t-store-2">Dept. Store</b><small id="t-store-2-d">Deducts ~1.55%</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="res-panel" id="resPanel">
+        <div id="t-res-label" style="font-weight: 700; font-size: 13px; text-transform: uppercase;">Estimated Actual Refund</div>
+        <div class="res-val">¥ <span id="res-jpy">0</span></div>
+        <div class="res-cur">
+            <div>≈ <span id="res-c1">0</span> <span id="cur-1">USD</span></div>
+        </div>
+        <div class="advice-box" id="advice-box">Enter amount for queueing advice</div>
+    </div>
+
+    <div class="share-stack">
+        <button class="share-btn line" id="t-share-line" onclick="socialShare('line')">Share on LINE</button>
+        <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">Copy Calculation Link</button>
+    </div>
+
+    <section class="seo-box" id="seoArea"></section>
+
+    <div class="footer-links" style="text-align: center; margin-top: 20px;">
+        <a href="/en/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">About Us</a>
+        <span style="color: #D1D1D6;">|</span>
+        <a href="/en/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">Privacy Policy</a>
+        <span style="color: #D1D1D6;">|</span>
+        <a href="/sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">Sitemap</a>
+    </div>
+
+    <div class="footer-disclaimer" id="t-disclaimer-footer">
+        Calculation results are for reference only.
+    </div>
+</div>
+
+<button class="fab-reset" onclick="resetAll()">↺</button>
+
+<script>
+    let globalRates = { CNY: 0.0475, USD: 0.0066, HKD: 0.051, KRW: 9.15, THB: 0.2280 };
+
+    const i18n = {
+        zh: {
+            "pageTitle": "2026 日本退税计算器 - 购物免税额度实时计算",
+            "heroTitle": "2026 日本退税计算器",
+            "heroDesc": "支持实时汇率转换与百货公司手续费精准扣除。",
+            "auth": "官方算法",
+            "upd": "更新于: 2026年1月",
+            "amt": "购买总额",
+            "incl": "含税价",
+            "excl": "不含税",
+            "cat": "商品类型",
+            "cat1": "一般物品",
+            "cat1d": "服装/电器 (10%)",
+            "cat2": "消耗品",
+            "cat2d": "药妆/食品 (8%)",
+            "store": "店铺类型",
+            "store1": "独立店/药妆店",
+            "store1d": "100% 退税 (无费用)",
+            "store2": "百货公司",
+            "store2d": "收取 ~1.55% 手续费",
+            "res": "预计实到手退税额",
+            "curTarget": "CNY",
+            "curName": "CNY 人民币",
+            "copyBtn": "复制计算链接",
+            "copyOk": "链接已复制",
+            "lowAmt": "还差 ${diff} JPY 即可达到 5,000 JPY 退税门槛",
+            "highCap": "💡 已按最高 50 万日元免税额度计算",
+            "adv0": "输入金额以获取排队建议",
+            "adv1": "提示：金额较小，排队时间长建议放弃",
+            "adv2": "提示：金额适中，建议排队退税",
+            "adv3": "提示：金额很大，务必排队退税！",
+            "adRate": "实时汇率参考",
+            "adJpy": "今日日元兑人民币约为",
+            "shareL": "在 LINE 上分享",
+            "seo": "<h2>2026 日本消费税退税规则 FAQ</h2><p>根据日本国税厅(NTA)最新规定，外国游客在日本购物满足特定条件即可享受免税待遇。</p><h3>1. 免税门槛是多少？</h3><p>在同一家店同一天购物满 <b>5,000 日元</b>（不含税）即可办理退税。本计算器会自动检测您的金额是否达标。</p><h3>2. 一般物品 vs 消耗品</h3><p>日本观光厅 (JTA) 的指南中指出，一般物品（服饰、电器）税率为 10%；消耗品（食品、化妆品）税率为 8%。消耗品退税后会被特殊包装，在日本境内不得拆封使用。</p><h3>3. 为什么退税金额少于 10%？</h3><p>大型百货公司（如三越、高岛屋）通常会扣除约 <b>1.55%</b> 的服务手续费。本工具支持“百货公司”选项，自动计算最终到手净额。</p><div class=\"formula-box\">实际退税 = (不含税价格 × 税率) - (不含税价格 × 手续费率)</div><div class=\"authority-module\"><h3>官方信息来源与参考</h3><p>本计算器的逻辑基于日本国税厅的官方规定。如需查阅最权威、最详细的法律条文，请访问以下链接（日文）：</p><ul><li><strong>日本国税厅 (National Tax Agency)</strong>: <a href=\"https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm\" target=\"_blank\" rel=\"noopener\">关于消费税免税制度的官方说明</a></li><li><strong>观光厅（Japan Tourism Agency）</strong>: <a href=\"https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/\" target=\"_blank\" rel=\"noopener\">面向访日游客的免税指南</a></li></ul><p class=\"footer-note\"><small>请注意：相关政策可能更新，以上官方链接提供最准确的信息。</small></p></div>",
+            "footer": "计算结果仅供参考，实际退税额以店内柜台结算为准。",
+            "linkAbout": "关于我们",
+            "linkPrivacy": "隐私政策"
+        },
+        zhtw: {
+            "pageTitle": "2026 日本退稅計算器 - 日本購物免稅額度計算工具",
+            "heroTitle": "2026 日本退稅計算器",
+            "heroDesc": "支持實時匯率轉換與百貨公司手續費精準扣除。",
+            "auth": "官方算法",
+            "upd": "更新於: 2026年1月",
+            "amt": "購買總額",
+            "incl": "含稅價",
+            "excl": "不含稅",
+            "cat": "商品類型",
+            "cat1": "一般物品",
+            "cat1d": "服裝/電器 (10%)",
+            "cat2": "消耗品",
+            "cat2d": "藥妝/食品 (8%)",
+            "store": "店鋪類型",
+            "store1": "獨立店/藥妝店",
+            "store1d": "100% 退稅 (無費用)",
+            "store2": "百貨公司",
+            "store2d": "收取 ~1.55% 手續費",
+            "res": "預計實到手退稅額",
+            "curTarget": "HKD",
+            "curName": "HKD 港幣",
+            "copyBtn": "複製計算連結",
+            "copyOk": "連結已複製",
+            "lowAmt": "還差 ${diff} JPY 即可達到 5,000 JPY 退稅門檻",
+            "highCap": "💡 已按最高 50 萬日圓免稅額度計算",
+            "adv0": "輸入金額以獲取排隊建議",
+            "adv1": "提示：金額較小，排隊時間長建議放棄",
+            "adv2": "提示：金額適中，建議排隊退稅",
+            "adv3": "提示：金額很大，務必排隊退稅！",
+            "adRate": "實時匯率參考",
+            "adJpy": "今日日圓兌港幣約為",
+            "shareL": "在 LINE 上分享",
+            "seo": "<h2>2026 日本消費稅退稅規則 FAQ</h2><p><strong>根據日本國稅廳(NTA)最新規定</strong>，外國遊客在日本購物滿足特定條件即可享受免稅待遇。</p><h3>1. 免稅門檻是多少？</h3><p><strong>根據日本國稅廳(NTA)最新規定</strong>，在同一家店同一天購物滿 <b>5,000 日圓</b>（不含稅）即可辦理退稅。本計算器會自動檢測您的金額是否達標。</p><h3>2. 一般物品 vs 消耗品</h3><p>一般物品（服飾、電器）稅率為 10%；消耗品（食品、化妝品）稅率為 8%。<strong>日本觀光廳(JTA)的指南中指出</strong>，消耗品退稅後會被特殊包裝，在日本境內不得拆封使用。</p><h3>3. 為什麼退稅金額少於 10%？</h3><p>大型百貨公司（如三越、高島屋）通常會扣除約 <b>1.55%</b> 的服務手續費。本工具支持“百貨公司”選項，自動計算最終到手淨額。</p><div class=\"formula-box\">實際退稅 = (不含稅價格 × 稅率) - (不含稅價格 × 手續費率)</div><div class=\"authority-module\"><h3>官方信息來源與參考</h3><p>本計算器的邏輯嚴格依據日本官方機構發佈的規定。如需查閱最權威的信息，請訪問：</p><ul><li><strong>日本國稅廳 (NTA)</strong>: <a href=\"https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm\" target=\"_blank\" rel=\"noopener\">關於消費稅免稅制度的官方說明（日文）</a></li><li><strong>日本觀光廳 (JTA)</strong>: <a href=\"https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/\" target=\"_blank\" rel=\"noopener\">面向訪日遊客的免稅指南（日文）</a></li></ul><p><small>請注意：相關政策可能更新，以上官方鏈接提供最準確的信息。</small></p></div>",
+            "footer": "計算結果僅供參考，實際退稅額以店內櫃檯結算為准。",
+            "linkAbout": "關於我們",
+            "linkPrivacy": "隱私政策"
+        },
+        en: {
+            pageTitle: "Japan Tax Refund Calculator 2026 - Official Duty-Free Guide",
+            heroTitle: "Japan Tax Refund Calculator 2026",
+            heroDesc: "Instant calculations with live exchange rates and department store service fees.",
+            auth: "Official Logic", upd: "Updated: Dec 2026", amt: "Total Amount", incl: "Tax Incl.", excl: "Tax Excl.", cat: "Category", cat1: "General Goods", cat1d: "Clothing/Tech (10%)", cat2: "Consumables", cat2d: "Food/Cosme (8%)",
+            store: "Store Type", store1: "Standard Shop", store1d: "Full Refund (0 Fee)", store2: "Dept Store", store2d: "Service Fee (~1.55%)", res: "Net Refund Amount",
+            curTarget: "USD", curName: "USD Dollar", copyBtn: "Copy Link", copyOk: "Copied!",
+            lowAmt: "Need ¥${diff} more to reach ¥5,000 threshold", 
+            highCap: "💡 Capped at ¥500k tax-free limit",
+            adv0: "Enter amount for queueing advice", adv1: "Advice: Low refund, skip if queue is long", adv2: "Advice: Worth waiting for refund", adv3: "Advice: Significant refund, must queue!",
+            adRate: "Live Exchange Rate", adJpy: "1 JPY ≈ ", shareL: "Share on LINE",
+            seo: `<h2>Japan Tax Refund Guide 2026</h2>
+                <p><strong>According to the latest regulations from the National Tax Agency (NTA) of Japan</strong>, international visitors can enjoy tax-exempt shopping under specific conditions.</p>
+                <h3>1. Minimum Purchase</h3>
+                <p><strong>According to the latest regulations from the National Tax Agency (NTA) of Japan</strong>, you must spend at least <b>¥5,000</b> (tax excl.) in a single store on the same day to qualify for a tax refund.</p>
+                <h3>2. General Goods vs Consumables</h3>
+                <p>The tax rate for general goods (e.g., clothing, electronics) is 10%, while consumables (e.g., food, cosmetics) are taxed at 8%. <strong>The guidelines from the Japan Tourism Agency (JTA) indicate that</strong> consumables must be sealed in special packaging and cannot be used within Japan.</p>
+                <h3>3. Department Store Fees</h3>
+                <p>Major department stores (e.g., Mitsukoshi, Takashimaya) often charge a <b>1.55%</b> service fee, which reduces your net refund. <strong>The guidelines from the Japan Tourism Agency (JTA) indicate that</strong> this is a common practice. Our calculator includes a "Department Store" option to account for this.</p>
+                <div class="formula-box">Net Refund = (Price Excl. Tax × Tax Rate) - (Price Excl. Tax × Fee Rate)</div>
+                <div class="authority-module">
+                <h3>Official Sources & References</h3>
+                <p>The logic of this calculator is strictly based on regulations published by Japanese official agencies. For the most authoritative information, please visit:</p>
+                <ul>
+                    <li><strong>National Tax Agency (NTA)</strong>: <a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm" target="_blank" rel="noopener">Official Guide on Consumption Tax Exemption (Japanese)</a></li>
+                    <li><strong>Japan Tourism Agency (JTA)</strong>: <a href="https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/" target="_blank" rel="noopener">Tax-Free Shopping Guide for Visitors (Japanese)</a></li>
+                </ul>
+                <p><small>Note: Policies may be updated. The official links above provide the most accurate information.</small></p></div>`,
+            footer: "Calculation results are for reference only.",
+            linkAbout: "About Us",
+            linkPrivacy: "Privacy Policy"
+        },
+        ko: {
+            "pageTitle": "2026 일본 면세 계산기 - 일본 여행 쇼핑 세금 환급 도구",
+            "heroTitle": "2026 일본 면세 계산기",
+            "heroDesc": "실시간 환율 및 백화점 수수료 자동 계산 기능 포함.",
+            "auth": "공식 로직",
+            "upd": "업데이트: 2026년 1월",
+            "amt": "구매 총액",
+            "incl": "세금 포함",
+            "excl": "세금 제외",
+            "cat": "상품 유형",
+            "cat1": "일반 물품",
+            "cat1d": "의류/가전 (10%)",
+            "cat2": "소모품",
+            "cat2d": "약국/식품 (8%)",
+            "store": "매장 유형",
+            "store1": "일반 매장",
+            "store1d": "100% 환급 (수수료 없음)",
+            "store2": "백화점",
+            "store2d": "약 1.55% 수수료 공제",
+            "res": "예상 실제 환급액",
+            "curTarget": "KRW",
+            "curName": "KRW 원",
+            "copyBtn": "링크 복사",
+            "copyOk": "복사되었습니다!",
+            "lowAmt": "면세 기준인 5,000엔까지 ${diff}엔 더 필요합니다",
+            "highCap": "💡 최대 50만엔 면세 한도로 계산되었습니다",
+            "adv0": "대기 조언을 위해 금액을 입력하세요",
+            "adv1": "조언: 환급액이 적으니 대기가 길면 포기하세요",
+            "adv2": "조언: 환급받으러 줄을 서는 것을 추천합니다",
+            "adv3": "조언: 환급액이 크니 반드시 줄을 서세요!",
+            "adRate": "실시간 환율 정보",
+            "adJpy": "오늘의 JPY/KRW 환율은 약",
+            "shareL": "LINE으로 공유",
+            "seo": "<h2>일본 소비세 환급 FAQ (2026)</h2><p><strong>일본 국세청(NTA)의 최신 규정에 따르면</strong>, 외국인 관광객은 일본에서 쇼핑 시 특정 조건을 충족하면 면세 혜택을 받을 수 있습니다.</p><h3>1. 면세 기준은 얼마인가요？</h3><p><strong>일본 국세청(NTA)의 최신 규정에 따르면</strong>, 동일한 매장에서 하루 동안 <b>5,000엔</b>(세금 제외) 이상 구매 시 세금 환급을 받을 수 있습니다.</p><h3>2. 일반 물품 vs 소모품</h3><p>일반 물품(의류, 가전제품)의 세율은 10%이며, 소모품(식품, 화장품)의 세율은 8%입니다. <strong>일본 관광청(JTA) 가이드라인에서는</strong> 소모품은 면세 처리 후 특수 포장되며, 일본 내에서는 개봉할 수 없다고 명시하고 있습니다.</p><h3>3. 왜 환급액이 10%보다 적나요？</h3><p>대형 백화점(미츠코시, 타카시마야 등)은 보통 약 <b>1.55%</b>의 서비스 수수료를 공제합니다. <strong>일본 관광청(JTA) 가이드라인에서는</strong> 이는 일반적인 관행이라고 설명합니다. 본 도구는 ‘백화점’ 옵션을 통해 이를 반영합니다.</p><div class=\"formula-box\">실제 환급액 = (세전 가격 × 세율) - (세전 가격 × 수수료율)</div><div class=\"authority-module\"><h3>공식 정보 출처 및 참고 자료</h3><p>본 계산기의 로직은 일본 공식 기관이 발표한 규정을 엄격히 따릅니다. 가장 권위 있는 정보는 다음에서 확인하실 수 있습니다:</p><ul><li><strong>국세청 (NTA)</strong>: <a href=\"https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm\" target=\"_blank\" rel=\"noopener\">소비세 면세 제도에 관한 공식 안내 (일본어)</a></li><li><strong>관광청 (JTA)</strong>: <a href=\"https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/\" target=\"_blank\" rel=\"noopener\">방일 외국인을 위한 면세 쇼핑 가이드 (일본어)</a></li></ul><p><small>참고: 정책은 업데이트될 수 있습니다. 위 공식 링크가 가장 정확한 정보를 제공합니다.</small></p></div>",
+            "footer": "계산 결과는 참고용입니다. 실제 환급액은 점포 카운터에서 결제 시 기준으로 결정됩니다.",
+            "linkAbout": "정보",
+            "linkPrivacy": "개인정보처리방침"
+        },
+        th: {
+            "pageTitle": "เครื่องคำนวณคืนภาษีญี่ปุ่น 2026 - คู่มือซื้อของปลอดภาษี",
+            "heroTitle": "เครื่องคำนวณการคืนภาษีญี่ปุ่น 2026",
+            "heroDesc": "คำนวณทันทีพร้อมอัตราแลกเปลี่ยนปัจจุบันและค่าธรรมเนียมห้างสรรพสินค้า",
+            "auth": "ตรรกะทางการ",
+            "upd": "อัปเดตเมื่อ: ธ.ค. 2026",
+            "amt": "ยอดซื้อทั้งหมด",
+            "incl": "รวมภาษี",
+            "excl": "ไม่รวมภาษี",
+            "cat": "ประเภทสินค้า",
+            "cat1": "สินค้าทั่วไป",
+            "cat1d": "เสื้อผ้า/เครื่องใช้ไฟฟ้า (10%)",
+            "cat2": "สินค้าอุปโภคบริโภค",
+            "cat2d": "ยา/อาหาร (8%)",
+            "store": "ประเภทร้านค้า",
+            "store1": "ร้านค้าทั่วไป",
+            "store1d": "คืนภาษี 100% (ไม่มีค่าธรรมเนียม)",
+            "store2": "ห้างสรรพสินค้า",
+            "store2d": "หักค่าธรรมเนียม ~1.55%",
+            "res": "ยอดคืนภาษีสุทธิที่คาดว่าจะได้รับ",
+            "curTarget": "THB",
+            "curName": "THB บาท",
+            "copyBtn": "คัดลอกลิงก์",
+            "copyOk": "คัดลอกแล้ว!",
+            "lowAmt": "ยังขาดอีก ${diff} เยน เพื่อให้ถึงเกณฑ์ 5,000 เยน",
+            "highCap": "💡 คำนวณตามเพดานสูงสุด 500,000 เยน",
+            "adv0": "กรอกจำนวนเงินเพื่อรับคำแนะนำในการต่อคิว",
+            "adv1": "คำแนะนำ: ยอดน้อย หากคิวยาวแนะนำให้ข้าม",
+            "adv2": "คำแนะนำ: แนะนำให้รอคิวคืนภาษี",
+            "adv3": "คำแนะนำ: ยอดเยอะมาก ต้องรอคิวคืนภาษี!",
+            "adRate": "อัตราแลกเปลี่ยนปัจจุบัน",
+            "adJpy": "วันนี้ 1 เยน ประมาณ",
+            "shareL": "แชร์ผ่าน LINE",
+            "seo": '<h2>คำถามที่พบบ่อยเกี่ยวกับการคืนภาษีญี่ปุ่น 2026</h2><p><strong>ตามข้อกำหนดล่าสุดของกรมสรรพากร (NTA) ประเทศญี่ปุ่น</strong> นักท่องเที่ยวต่างชาติสามารถเพลิดเพลินกับการยกเว้นภาษีเมื่อช้อปปิ้งในญี่ปุ่นหากเป็นไปตามเงื่อนไขที่กำหนด</p><h3>1. เกณฑ์ขั้นต่ำในการยกเว้นภาษีคือเท่าไหร่？</h3><p><strong>ตามข้อกำหนดล่าสุดของกรมสรรพากร (NTA) ประเทศญี่ปุ่น</strong> คุณต้องซื้อสินค้าครบ <b>5,000 เยน</b> (ไม่รวมภาษี) ในร้านเดียวกันภายในวันเดียวกันเพื่อขอคืนภาษี</p><h3>2. สินค้าทั่วไป vs สินค้าอุปโภคบริโภค</h3><p>อัตราภาษีสำหรับสินค้าทั่วไป (เสื้อผ้า, เครื่องใช้ไฟฟ้า) คือ 10% ในขณะที่สินค้าอุปโภคบริโภค (อาหาร, เครื่องสำอาง) คือ 8% <strong>แนวทางจากสำนักงานการท่องเที่ยวญี่ปุ่น (JTA) ระบุว่า</strong> สินค้าอุปโภคบริโภคจะถูกบรรจุในถุงพิเศษและห้ามแกะใช้ในประเทศญี่ปุ่น</p><h3>3. ทำไมยอดคืนภาษีถึงน้อยกว่า 10%？</h3><p>ห้างสรรพสินค้าขนาดใหญ่ (เช่น Mitsukoshi, Takashimaya) มักจะหักค่าธรรมเนียมบริการประมาณ <b>1.55%</b> <strong>แนวทางจากสำนักงานการท่องเที่ยวญี่ปุ่น (JTA) ระบุว่า</strong> นี่เป็นแนวทางปฏิบัติทั่วไป เครื่องมือนี้รองรับตัวเลือก "ห้างสรรพสินค้า" เพื่อคำนวณยอดสุทธิที่คุณจะได้รับจริง</p><div class=\"formula-box\">ยอดคืนภาษีจริง = (ราคาก่อนภาษี × อัตราภาษี) - (ราคาก่อนภาษี × อัตราค่าธรรมเนียม)</div><div class=\"authority-module\"><h3>แหล่งข้อมูลทางการและข้อมูลอ้างอิง</h3><p>ตรรกะของเครื่องคำนวณนี้ยึดตามข้อกำหนดที่เผยแพร่โดยหน่วยงานทางการของญี่ปุ่น สำหรับข้อมูลที่มีอำนาจหน้าที่มากที่สุด โปรดไปที่:</p><ul><li><strong>กรมสรรพากร (NTA)</strong>: <a href=\"https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm\" target=\"_blank\" rel=\"noopener\">คำอธิบายทางการเกี่ยวกับระบบยกเว้นภาษีมูลค่าเพิ่ม (ภาษาญี่ปุ่น)</a></li><li><strong>สำนักงานการท่องเที่ยวญี่ปุ่น (JTA)</strong>: <a href=\"https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/\" target=\"_blank\" rel=\"noopener\">แนวทางช้อปปิ้งปลอดภาษีสำหรับผู้มาเยือน (ภาษาญี่ปุ่น)</a></li></ul><p><small>หมายเหตุ: นโยบายอาจมีการอัปเดต ลิงก์ทางการข้างต้นให้ข้อมูลที่ถูกต้องที่สุด</small></p></div>',
+            "footer": "ผลลัพธ์การคำนวณใช้เพื่อการอ้างอิงเท่านั้น",
+            "linkAbout": "เกี่ยวกับเรา",
+            "linkPrivacy": "นโยบายความเป็นส่วนตัว"
+        },
+        ja: {
+            "pageTitle": "2026 日本税金還付計算機 - ショッピング免税限度額リアルタイム計算",
+            "heroTitle": "2026 日本税金還付計算機",
+            "heroDesc": "リアルタイム為替換算対応、デパート手数料を精密に控除。",
+            "auth": "公式ロジック",
+            "upd": "更新日: 2026年1月",
+            "amt": "購入総額",
+            "incl": "税込価格",
+            "excl": "税抜価格",
+            "cat": "商品カテゴリー",
+            "cat1": "一般物品",
+            "cat1d": "衣類/家電 (10%)",
+            "cat2": "消耗品",
+            "cat2d": "化粧品/食品 (8%)",
+            "store": "店舗タイプ",
+            "store1": "独立店/ドラッグストア",
+            "store1d": "100% 還付 (手数料なし)",
+            "store2": "デパート",
+            "store2d": "約 1.55% 手数料を控除",
+            "res": "お受け取り見込み還付額",
+            "curTarget": "JPY",
+            "curName": "JPY 円",
+            "copyBtn": "計算リンクをコピー",
+            "copyOk": "リンクをコピーしました",
+            "lowAmt": "免税基準の 5,000 円まで、あと ${diff} 円必要です",
+            "highCap": "💡 最高 50 万円の免税限度額で計算されています",
+            "adv0": "金額を入力して待ち時間のアドバイスを表示",
+            "adv1": "アドバイス: 還付額が少ないため、行列が長い場合は見送りを推奨",
+            "adv2": "アドバイス: 還付額が見合うため、還付手続きの待機を推奨",
+            "adv3": "アドバイス: 還付額が大きいため、必ず還付手続きをお待ちください！",
+            "adRate": "リアルタイム為替レート",
+            "adJpy": "本日のJPY/JPY レートは約",
+            "shareL": "LINEで共有",
+            "seo": "<h2>2026 年 日本消費税還付に関するよくあるご質問</h2><p><strong>日本国税庁(NTA)の最新規定によると</strong>、訪日外国人の方が日本でのお買い物で特定の条件を満たす場合、免税待遇を受けることができます。</p><h3>1. 免税の基準額はいくらですか？</h3><p><strong>日本国税庁(NTA)の最新規定によると</strong>、同一店舗で同日に<b>5,000 円</b>（税抜）以上お買い上げいただくと、免税手続きが可能です。</p><h3>2. 一般物品と消耗品の違い</h3><p>一般物品（衣類、家電）の税率は 10%、消耗品（食品、化粧品）の税率は 8% です。<strong>日本観光庁(JTA)のガイドラインでは</strong>、消耗品は免税後、特別なパッケージに密封され、日本国内では開封・使用できません。</p><h3>3. なぜ還付額が 10% より少ないのですか？</h3><p>主要デパート（三越、高島屋など）では、通常約 <b>1.55%</b> のサービス手数料が差し引かれます。<strong>日本観光庁(JTA)のガイドラインでは</strong>、これは一般的な慣行です。当ツールは「デパート」オプションに対応し、最終的なお受取額を計算します。</p><div class=\"formula-box\">実際の還付額 = (税抜価格 × 税率) - (税抜価格 × 手数料率)</div><div class=\"authority-module\"><h3>公式情報源と参考資料</h3><p>この計算機のロジックは、日本の公式機関が発表した規定に厳密に基づいています。最も権威ある情報については、以下をご覧ください：</p><ul><li><strong>国税庁 (NTA)</strong>: <a href=\"https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm\" target=\"_blank\" rel=\"noopener\">消費税の非課税制度に関する公式説明</a></li><li><strong>観光庁 (JTA)</strong>: <a href=\"https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/\" target=\"_blank\" rel=\"noopener\">訪日外国人向け免税ショッピングガイド</a></li></ul><p><small>ご注意：政策は更新される可能性があります。上記の公式リンクが最も正確な情報を提供します。</small></p></div>",
+            "footer": "計算結果は参考情報です。実際の還付額は店頭カウンターでの精算を準拠します。",
+            "linkAbout": "当サイトについて",
+            "linkPrivacy": "プライバシーポリシー"
+        }
+
+    };
+
+    // 根据URL路径自动判断语言的函数
+    function getLangFromPath() {
+        const path = window.location.pathname; // 例如 "/zhj/"
+        if (path.includes('/zhj/')) return 'zh';
+        if (path.includes('/zhf/')) return 'zhtw';
+        if (path.includes('/ja/')) return 'ja';
+        if (path.includes('/ko/')) return 'ko';
+        if (path.includes('/th/')) return 'th';
+        // 默认回退到英语
+        return 'en';
+    }
+
+    // 初始化状态，语言由URL决定
+    let state = { lang: getLangFromPath(), mode: 'incl', rate: 0.10, fee: 0 };
+
+
+    async function fetchLiveRate() {
+        try {
+            const res = await fetch('https://open.er-api.com/v6/latest/JPY');
+            const data = await res.json();
+            globalRates = data.rates;
+            calculate();
+            updateBannerRate();
+        } catch(e) { console.log("Rate fetch failed"); }
+    }
+
+    function updateBannerRate() {
+        const t = i18n[state.lang] || i18n.en;
+        const rateVal = globalRates[t.curTarget];
+        document.getElementById('live-rate').innerText = rateVal.toFixed(4);
+    }
+
+    function changeLang() {
+        // 直接使用已根据URL设置好的 state.lang
+        const langKey = state.lang;
+        const t = i18n[langKey] || i18n.en; // 获取对应语言的翻译文本
+        
+        // 动态修改网页标题
+        document.title = t.pageTitle;
+
+        // 更新 Hero
+        document.getElementById('t-hero-title').innerText = t.heroTitle;
+        document.getElementById('t-hero-desc').innerText = t.heroDesc;
+        
+        document.getElementById('t-auth').innerText = t.auth;
+        document.getElementById('t-upd').innerText = t.upd;
+        document.getElementById('t-ad-rate').innerText = t.adRate;
+        document.getElementById('t-ad-jpy').innerText = t.adJpy;
+        document.getElementById('t-label-amt').innerText = t.amt.toUpperCase();
+        document.getElementById('t-incl').innerText = t.incl;
+        document.getElementById('t-excl').innerText = t.excl;
+        document.getElementById('t-label-cat').innerText = t.cat.toUpperCase();
+        document.getElementById('t-cat-1').innerText = t.cat1;
+        document.getElementById('t-cat-1-d').innerText = t.cat1d;
+        document.getElementById('t-cat-2').innerText = t.cat2;
+        document.getElementById('t-cat-2-d').innerText = t.cat2d;
+        document.getElementById('t-label-store').innerText = t.store.toUpperCase();
+        document.getElementById('t-store-1').innerText = t.store1;
+        document.getElementById('t-store-1-d').innerText = t.store1d;
+        document.getElementById('t-store-2').innerText = t.store2;
+        document.getElementById('t-store-2-d').innerText = t.store2d;
+        document.getElementById('t-res-label').innerText = t.res;
+        document.getElementById('cur-1').innerText = t.curName;
+        document.getElementById('t-share-line').innerText = t.shareL;
+        document.getElementById('t-copy-btn').innerText = t.copyBtn;
+        document.getElementById('seoArea').innerHTML = t.seo;
+        document.getElementById('t-disclaimer-footer').innerText = t.footer;
+
+        // 新增：更新底部链接文字
+        document.getElementById('t-link-about').innerText = t.linkAbout;
+        document.getElementById('t-link-privacy').innerText = t.linkPrivacy;
+        
+        updateBannerRate();
+        calculate();
+    }
+
+    function calculate() {
+        const val = parseFloat(document.getElementById('amtInput').value) || 0;
+        const t = i18n[state.lang] || i18n.en;
+        const thresholdMsg = document.getElementById('threshold-msg');
+        const inputCard = document.getElementById('inputCard');
+        const resPanel = document.getElementById('resPanel');
+        const adviceBox = document.getElementById('advice-box');
+
+        let preTax = (state.mode === 'incl') ? (val / (1 + state.rate)) : val;
+        let calcPreTax = preTax;
+        let isLow = false;
+        let isCapped = false;
+        
+        if (val > 0 && preTax < 5000) isLow = true;
+        else if (state.rate === 0.08 && preTax > 500000) {
+            isCapped = true;
+            calcPreTax = 500000;
+        }
+
+        thresholdMsg.style.display = 'none';
+        inputCard.className = 'card';
+        resPanel.classList.remove('dim');
+
+        if (isLow) {
+            thresholdMsg.style.display = 'block';
+            thresholdMsg.innerText = t.lowAmt.replace('${diff}', Math.ceil(5000 - preTax));
+            thresholdMsg.className = 'threshold-msg msg-warning';
+            inputCard.classList.add('alert-active');
+            resPanel.classList.add('dim');
+        } else if (isCapped) {
+            thresholdMsg.style.display = 'block';
+            thresholdMsg.innerText = t.highCap;
+            thresholdMsg.className = 'threshold-msg msg-info';
+            inputCard.classList.add('info-active');
+        }
+
+        let refund = 0;
+        if (!isLow) {
+            refund = Math.floor(calcPreTax * state.rate) - Math.ceil(calcPreTax * state.fee);
+            refund = Math.max(0, refund);
+        }
+
+        if (val === 0) adviceBox.innerText = t.adv0;
+        else if (isLow) adviceBox.innerText = "---";
+        else if (refund < 1000) adviceBox.innerText = t.adv1;
+        else if (refund < 5000) adviceBox.innerText = t.adv2;
+        else adviceBox.innerText = t.adv3;
+
+        document.getElementById('res-jpy').innerText = refund.toLocaleString();
+        const targetRate = globalRates[t.curTarget];
+        document.getElementById('res-c1').innerText = (refund * targetRate).toFixed(t.curTarget === 'USD' ? 2 : 1).toLocaleString();
+    }
+
+    document.getElementById('amtInput').addEventListener('input', calculate);
+    document.querySelectorAll('.tax-toggle span').forEach(s => s.addEventListener('click', e => {
+        document.querySelectorAll('.tax-toggle span').forEach(x => x.classList.remove('active'));
+        e.target.classList.add('active');
+        state.mode = e.target.dataset.mode;
+        calculate();
+    }));
+
+    function bindGrid(id, key) {
+        document.querySelectorAll(`#${id} .seg-item`).forEach(el => el.addEventListener('click', e => {
+            const item = e.target.closest('.seg-item');
+            document.querySelectorAll(`#${id} .seg-item`).forEach(x => x.classList.remove('active'));
+            item.classList.add('active');
+            state[key] = parseFloat(item.dataset[key]);
+            calculate();
+        }));
+    }
+    bindGrid('catGroup', 'rate');
+    bindGrid('storeGroup', 'fee');
+
+    function resetAll() {
+        document.getElementById('amtInput').value = '';
+        calculate();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    function socialShare(platform) {
+        const url = window.location.href;
+        if(platform === 'line') window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}`);
+        if(platform === 'native') {
+            navigator.clipboard.writeText(url); alert(i18n[state.lang].copyOk);
+        }
+    }
+    // 页面加载后，立即根据URL渲染对应语言
+    window.addEventListener('DOMContentLoaded', function() {
+        changeLang();
+    });
+    fetchLiveRate();
+    changeLang();
+</script>
+</body>
+</html>

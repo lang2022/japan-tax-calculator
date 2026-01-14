@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description" content="Japan Tax Refund Calculator - Choose Language">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Tax Refund Calculator - Choose Language</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; text-align: center; padding: 50px 20px; background: #F8F9FA; color: #333; }
+        h1 { color: #E63946; }
+        .lang-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; max-width: 600px; margin: 40px auto; }
+        .lang-btn { background: white; border: 2px solid #E5E5EA; padding: 20px; border-radius: 1px; text-decoration: none; color: #1C1C1E; font-weight: 600; transition: all 0.3s; }
+        .lang-btn:hover { border-color: #E63946; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(230, 57, 70, 0.1); }
+    </style>
+
+    <base href="/">
+
+  </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6231P53QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6231P53QB');
+    </script>
+
+</head>
+<body>
+    <h1>Japan Tax Refund Calculator</h1>
+    <p>Please select your language / 请选择您的语言</p>
+    
+    <div class="lang-grid">
+        <a class="lang-btn" href="/zhj/">简体中文</a>
+        <a class="lang-btn" href="/zhf/">繁體中文</a>
+        <a class="lang-btn" href="/en/">English</a>
+        <a class="lang-btn" href="/ja/">日本語</a>
+        <a class="lang-btn" href="/ko/">한국어</a>
+        <a class="lang-btn" href="/th/">ไทย</a>
+    </div>
+
+    <script>
+        // 浏览器语言自动重定向逻辑
+        const langMap = {
+            'zh-cn': '/zhj/',
+            'zh-sg': '/zhj/',
+            'zh': '/zhj/',
+            'zh-tw': '/zhf/',
+            'zh-hk': '/zhf/',
+            'zh-mo': '/zhf/',
+            'en': '/en/',
+            'ja': '/ja/',
+            'ko': '/ko/',
+            'th': '/th/'
+        };
+        const userLang = navigator.language.toLowerCase();
+        const targetPath = langMap[userLang] || langMap[userLang.split('-')[0]] || '/en/'; // 默认英语
+        // 延迟3秒后跳转，给予用户选择机会
+        setTimeout(() => { window.location.href = targetPath; }, 3000);
+    </script>
+</body>
+</html>
