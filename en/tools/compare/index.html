@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Compare Japan Tax-Free Outcomes (2026) | Service Fee On/Off, Split vs Combine</title>
-  <meta name="description" content="Compare your tax-free outcome across scenarios: service fee on/off and split vs combine checkout. Quickly see which strategy yields the best real savings (2026).">
+  <title>Compare Japan Tax-Free Outcomes (2026) | Fee vs No Fee, Split vs Combine</title>
+  <meta name="description" content="Compare common Japan tax-free scenarios in 2026: standard shops vs department stores, split vs combine checkout, and category differences that change your final savings.">
 
-  <meta property="og:title" content="Tax‑Free Compare Tool (2026)">
-  <meta property="og:description" content="Compare scenarios and pick the best strategy.">
+  <meta property="og:title" content="Tax-Free Scenario Comparison (2026)">
+  <meta property="og:description" content="Compare common shopping scenarios before you queue for tax-free.">
 
   <link rel="canonical" href="https://refundjapan.com/en/tools/compare/">
 
@@ -32,31 +32,40 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What can I compare?",
+      "name": "What should I compare first?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Service fee on/off, checkout strategy, and category assumptions."
+        "text": "Start with store type, then compare split vs combine checkout if your items or fees differ."
       }
     },
     {
       "@type": "Question",
-      "name": "When is comparison useful?",
+      "name": "When does comparison matter most?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When service fees apply or categories are mixed."
+        "text": "Comparison matters most when department store service fees apply or when general goods and consumables are mixed."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the comparison exact?",
+      "name": "Is this page a final quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It’s an estimate—store policy and categorization can change outcomes."
+        "text": "No. It helps you compare scenarios before checkout, but store policy and item classification can still change the final outcome."
       }
     }
   ]
 }
   </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6231P53QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6231P53QB');
+    </script>
 </head>
 
 <body>
@@ -75,30 +84,49 @@
     </header>
 
     <section class="hero">
-      <h1>Tax‑Free Compare Tool (2026)</h1>
-      <p>Skeleton page: plug in your existing calculator logic to compare multiple scenarios side-by-side.</p>
+      <h1>Compare Tax-Free Scenarios Before You Pay</h1>
+      <p>Use this page to think through the most common situations that change your real savings: service fees, mixed categories, and split vs combine checkout.</p>
       <div class="cta-row">
-        <a class="btn primary" href="/en/tools/compare/">Compare now</a>
-        <a class="btn" href="/en/tools/shopping-list/">Go to shopping list</a>
+        <a class="btn primary" href="/en/">Open the calculator</a>
+        <a class="btn" href="/en/guide/department-store-fee/">Read about service fees</a>
       </div>
     </section>
 
     <main class="card">
-      <h2>Implement the compare UI here</h2>
-      <p class="small">Example: show Scenario A/B/C cards (fee/no-fee, split/combine) with final payable amount and savings.</p>
+      <h2>Three comparisons that matter most</h2>
+      <ul>
+        <li><strong>Standard shop vs department store:</strong> department stores may deduct a tax-free service fee.</li>
+        <li><strong>Split vs combine checkout:</strong> one method may help you reach the threshold more efficiently.</li>
+        <li><strong>General goods vs consumables:</strong> different tax rates can change the final estimate.</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <h2>Quick comparison example</h2>
+      <p>Suppose you have a tax-excluded basket worth <strong>¥5,000</strong> in a standard shop. A general-goods purchase gives an estimated refund of <strong>¥500</strong>. The same basket in a department store with a <strong>1.55%</strong> fee gives about <strong>¥422</strong>.</p>
+      <p class="small">That difference is why store type should be your first comparison whenever you are close to the threshold or buying in a large department store.</p>
 
       <div class="cta-row">
-        <a class="btn primary" href="/en/guide/department-store-fee/">Understand service fees</a>
-        <a class="btn" href="/en/guide/how-to-calculate/">Calculation guide</a>
+        <a class="btn primary" href="/en/">Test your own amount</a>
+        <a class="btn" href="/en/guide/how-to-calculate/">See the formula and examples</a>
       </div>
+
+      <div class="hr"></div>
+
+      <h2>How to use this page with the calculator</h2>
+      <ol>
+        <li>Run your amount once as a standard shop.</li>
+        <li>Run it again as a department store.</li>
+        <li>If your basket mixes item types, compare one category at a time.</li>
+      </ol>
 
       <div class="hr"></div>
 
       <h2>FAQ</h2>
       <section class="faq">
-        <details><summary>What can I compare?</summary><p>Service fee on/off, checkout strategy, and category assumptions.</p></details>
-        <details><summary>When is comparison useful?</summary><p>When service fees apply or categories are mixed.</p></details>
-        <details><summary>Is the comparison exact?</summary><p>It’s an estimate—store policy and categorization can change outcomes.</p></details>
+        <details><summary>What should I compare first?</summary><p>Start with store type, then compare split vs combine checkout if your items or fees differ.</p></details>
+        <details><summary>When does comparison matter most?</summary><p>Comparison matters most when department store service fees apply or when general goods and consumables are mixed.</p></details>
+        <details><summary>Is this page a final quote?</summary><p>No. It helps you compare scenarios before checkout, but store policy and item classification can still change the final outcome.</p></details>
       </section>
 
     </main>

@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>買い物リスト免税計算｜複数商品をまとめて“到着額”を計算（2026）</title>
-  <meta name="description" content="複数商品の価格・カテゴリ（一般品/消耗品）を入力して、免税後の支払額・還付目安をまとめて計算。手数料がある店舗にも対応（2026）。">
+  <title>買い物リスト免税プランナー（2026）｜複数商品の目安を整理</title>
+  <meta name="description" content="日本の買い物リストを2026年版で整理。一般品と消耗品を分けて合計し、免税条件や百貨店手数料の影響を見ながら予算を組み立てます。">
 
-  <meta property="og:title" content="買い物リスト免税計算（2026）">
-  <meta property="og:description" content="複数商品をまとめて計算して、予算を管理。">
+  <meta property="og:title" content="買い物リスト免税プランナー（2026）">
+  <meta property="og:description" content="複数商品の買い方を整理してから計算。">
 
   <link rel="canonical" href="https://refundjapan.com/ja/tools/shopping-list/">
 
@@ -32,31 +32,40 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "一般品と消耗品が混ざっていても計算できる？",
+      "name": "一般品と消耗品を一緒に計画できますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "はい。カテゴリ別に入力して、まとめて目安を出します。"
+        "text": "はい。カテゴリごとに小計を出してから、計算機でそれぞれ比較すると分かりやすいです。"
       }
     },
     {
       "@type": "Question",
-      "name": "手数料がある店舗でも使える？",
+      "name": "百貨店の手数料はどう見ればいい？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "はい。手数料の条件を反映して比較できます（目安）。"
+        "text": "同じ小計を標準店舗と百貨店の両方で計算し、差額を確認するのがおすすめです。"
       }
     },
     {
       "@type": "Question",
-      "name": "結果を保存できますか？",
+      "name": "計画内容はどう保存すればいい？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "将来的に保存/共有機能を追加できます（現状は目安表示）。"
+        "text": "メモアプリに各カテゴリの小計を残し、最後に計算機へ入力するのが簡単です。"
       }
     }
   ]
 }
   </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6231P53QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6231P53QB');
+    </script>
 </head>
 
 <body>
@@ -75,30 +84,53 @@
     </header>
 
     <section class="hero">
-      <h1>買い物リストで免税額をまとめて計算（2026）</h1>
-      <p>複数商品の入力に対応する拡張ツールページ（骨架）。今後あなたの計算ロジックを移植します。</p>
+      <h1>買い物リストを整理してから免税額を考える</h1>
+      <p>複数商品の買い物前にカテゴリと小計を整理しておくと、免税条件や手数料の影響をつかみやすくなります。</p>
       <div class="cta-row">
-        <a class="btn primary" href="/ja/">単品計算に戻る</a>
-        <a class="btn secondary" href="/ja/tools/compare/">比較ツールへ</a>
+        <a class="btn primary" href="/ja/">計算機を開く</a>
+        <a class="btn secondary" href="/ja/tools/compare/">条件を比較する</a>
       </div>
     </section>
 
     <main class="card">
-      <h2>ここに「買い物リスト入力UI」を実装</h2>
-      <p class="small">例：商品名/金額/カテゴリ（一般品・消耗品）/手数料条件などを複数行入力 → 合計の目安を出す。</p>
+      <h2>買い物前の整理手順</h2>
+      <ol>
+        <li>商品ごとに一般品か消耗品かを分ける。</li>
+        <li>カテゴリごとに小計を出す。</li>
+        <li>必要なら標準店舗と百貨店の両方で計算して差を見る。</li>
+      </ol>
+
+      <div class="hr"></div>
+
+      <h2>かんたんな例</h2>
+      <ul>
+        <li>化粧品: ¥3,200（消耗品）</li>
+        <li>お菓子: ¥2,100（消耗品）</li>
+        <li>ヘッドホン: ¥12,000（一般品）</li>
+      </ul>
+      <p class="small">この例では、消耗品の小計は <strong>¥5,300</strong>、一般品の小計は <strong>¥12,000</strong> です。カテゴリごとに見ておくと、しきい値や税率の違いを理解しやすくなります。</p>
 
       <div class="cta-row">
-        <a class="btn primary" href="/ja/tools/compare/">分け会計/まとめ会計を比較</a>
-        <a class="btn" href="/ja/guide/consumables-vs-general/">一般品/消耗品の違い</a>
+        <a class="btn primary" href="/ja/">自分の小計を試す</a>
+        <a class="btn" href="/ja/guide/consumables-vs-general/">一般品と消耗品の違い</a>
       </div>
+
+      <div class="hr"></div>
+
+      <h2>確認しておきたい点</h2>
+      <ul>
+        <li>百貨店では免税手数料が差し引かれる場合があります。</li>
+        <li>混在した買い物は店舗ごとの運用で扱いが変わることがあります。</li>
+        <li>最終的なしきい値や処理方法は店舗案内を優先してください。</li>
+      </ul>
 
       <div class="hr"></div>
 
       <h2>FAQ</h2>
       <section class="faq">
-        <details><summary>一般品と消耗品が混ざっていても計算できる？</summary><p>はい。カテゴリ別に入力して、まとめて目安を出します。</p></details>
-        <details><summary>手数料がある店舗でも使える？</summary><p>はい。手数料の条件を反映して比較できます（目安）。</p></details>
-        <details><summary>結果を保存できますか？</summary><p>将来的に保存/共有機能を追加できます（現状は目安表示）。</p></details>
+        <details><summary>一般品と消耗品を一緒に計画できますか？</summary><p>はい。カテゴリごとに小計を出してから、計算機でそれぞれ比較すると分かりやすいです。</p></details>
+        <details><summary>百貨店の手数料はどう見ればいい？</summary><p>同じ小計を標準店舗と百貨店の両方で計算し、差額を確認するのがおすすめです。</p></details>
+        <details><summary>計画内容はどう保存すればいい？</summary><p>メモアプリに各カテゴリの小計を残し、最後に計算機へ入力するのが簡単です。</p></details>
       </section>
 
     </main>

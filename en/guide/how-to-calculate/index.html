@@ -35,7 +35,7 @@
       "name": "I only know the tax-included price. What should I do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use the calculator with the “tax-included” option to get an estimate."
+        "text": "Use the calculator with the tax-included option to convert the amount into a pre-tax estimate."
       }
     },
     {
@@ -43,23 +43,7 @@
       "name": "Do service fees always apply?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not always. Some stores (often department stores) deduct a tax-free service fee."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are tax rates different for general goods and consumables?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "They can be. Always follow the store’s category and signage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I combine multiple receipts from the same day?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the store’s policy and process."
+        "text": "Not always. Some stores, especially department stores, may deduct a tax-free service fee."
       }
     },
     {
@@ -67,12 +51,21 @@
       "name": "Is the result exact?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It’s an estimate. Store policy, category, and fees can change the final amount."
+        "text": "It is an estimate. Store policy, category handling, and final checkout rules can still change the actual amount."
       }
     }
   ]
 }
   </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6231P53QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6231P53QB');
+    </script>
 </head>
 
 <body>
@@ -91,17 +84,18 @@
     </header>
 
     <section class="hero">
-      <h1>How Japan Tax‑Free Refund Is Calculated (2026)</h1>
+      <h1>How Japan Tax-Free Refund Is Calculated (2026)</h1>
       <p>A clear breakdown of the key inputs: price type, category, and whether a store charges a service fee.</p>
       <div class="cta-row">
         <a class="btn primary" href="/en/">Try the calculator</a>
         <a class="btn" href="/en/guide/department-store-fee/">Learn about service fees</a>
+        <a class="btn" href="/en/guide/minimum-maximum/">Check eligibility basics</a>
       </div>
     </section>
 
     <main class="card">
       <h2>How tax-free works (simplified)</h2>
-      <p>Tax-free shopping typically means consumption tax is exempted at purchase. The exact flow and display (tax-included vs tax-excluded) can vary by store.</p>
+      <p>Tax-free shopping typically means consumption tax is exempted at purchase. The exact flow and display can vary by store, so the calculator focuses on the three inputs that most often change the result.</p>
 
       <h2>What affects the result</h2>
       <ul>
@@ -112,22 +106,26 @@
 
       <div class="hr"></div>
 
-      <h2>Examples</h2>
-      <p class="small">This is a placeholder section—add a simple numeric example that matches your calculator logic.</p>
+      <h2>Examples that match the calculator</h2>
+      <ul>
+        <li><strong>Example 1:</strong> Tax-included <strong>¥5,500</strong> for general goods at a standard shop becomes a pre-tax amount of <strong>¥5,000</strong>, so the estimated refund is <strong>¥500</strong>.</li>
+        <li><strong>Example 2:</strong> Tax-excluded <strong>¥5,000</strong> for general goods at a department store with a <strong>1.55%</strong> fee gives an estimated refund of <strong>¥422</strong>.</li>
+        <li><strong>Example 3:</strong> Tax-excluded <strong>¥600,000</strong> for general goods is capped at <strong>¥500,000</strong> for calculation on this site, so the estimated refund is <strong>¥50,000</strong>.</li>
+      </ul>
+
       <div class="cta-row">
-        <a class="btn primary" href="/en/">Run an example in the calculator</a>
+        <a class="btn primary" href="/en/">Run your own amount</a>
         <a class="btn secondary" href="/en/tools/compare/">Compare scenarios</a>
+        <a class="btn" href="/en/guide/consumables-vs-general/">Check item categories</a>
       </div>
 
       <div class="hr"></div>
 
       <h2>FAQ</h2>
       <section class="faq">
-        <details><summary>I only know the tax-included price. What should I do?</summary><p>Use the calculator with the “tax-included” option to get an estimate.</p></details>
-        <details><summary>Do service fees always apply?</summary><p>Not always. Some stores (often department stores) deduct a tax-free service fee.</p></details>
-        <details><summary>Are tax rates different for general goods and consumables?</summary><p>They can be. Always follow the store’s category and signage.</p></details>
-        <details><summary>Can I combine multiple receipts from the same day?</summary><p>It depends on the store’s policy and process.</p></details>
-        <details><summary>Is the result exact?</summary><p>It’s an estimate. Store policy, category, and fees can change the final amount.</p></details>
+        <details><summary>I only know the tax-included price. What should I do?</summary><p>Use the calculator with the tax-included option to convert the amount into a pre-tax estimate.</p></details>
+        <details><summary>Do service fees always apply?</summary><p>Not always. Some stores, especially department stores, may deduct a tax-free service fee.</p></details>
+        <details><summary>Is the result exact?</summary><p>It is an estimate. Store policy, category handling, and final checkout rules can still change the actual amount.</p></details>
       </section>
 
       <div class="hr"></div>
@@ -136,6 +134,8 @@
       <ul>
         <li><a href="/en/guide/consumables-vs-general/">General goods vs consumables</a></li>
         <li><a href="/en/guide/department-store-fee/">Department store service fees</a></li>
+        <li><a href="/en/guide/minimum-maximum/">Minimum spend and eligibility basics</a></li>
+        <li><a href="/en/guide/common-mistakes/">Common mistakes that affect the final amount</a></li>
         <li><a href="/en/tools/compare/">Compare split vs combine checkout</a></li>
       </ul>
 

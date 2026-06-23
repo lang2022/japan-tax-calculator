@@ -9,7 +9,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/"/>  
     <xhtml:link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/"/> 
     <xhtml:link rel="alternate" hreflang="th" href="https://refundjapan.com/th/"/> 
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/"/> 
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/"/>
     <lastmod>2026-01-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -72,7 +72,7 @@
     <priority>0.6</priority>
   </url>
      
-  <url>       
+  <url>
     <loc>https://refundjapan.com/zhf/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/privacy.html"/>
@@ -83,9 +83,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/privacy.html"/>
     <lastmod>2026-01-03</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>   
+    <priority>0.3</priority>
   </url>
-    
+
+  <url>
+    <loc>https://refundjapan.com/zhf/guide/how-to-calculate/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/guide/how-to-calculate/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/guide/how-to-calculate/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/guide/how-to-calculate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/guide/how-to-calculate/"/>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://refundjapan.com/zhf/guide/common-mistakes/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/guide/common-mistakes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/guide/common-mistakes/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/guide/common-mistakes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/guide/common-mistakes/"/>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://refundjapan.com/zhf/guide/department-store-fee/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/guide/department-store-fee/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/guide/department-store-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/guide/department-store-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/guide/department-store-fee/"/>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
   <url>
     <loc>https://refundjapan.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/"/>
@@ -443,6 +476,15 @@
     <lastmod>2026-01-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://refundjapan.com/en/guide/japan-tourist-tax-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://refundjapan.com/en/guide/japan-tourist-tax-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/guide/japan-tourist-tax-2026/"/>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>

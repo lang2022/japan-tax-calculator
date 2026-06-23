@@ -1,0 +1,6 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+a{color:inherit}
+.footer-links{margin-top:20px;text-align:center}
+.footer-links a{font-size:13px;color:var(--text-soft,var(--text-sec,#64748b));text-decoration:none;margin:0 8px}
+.footer-disclaimer{margin:18px auto 0;max-width:760px;text-align:center;font-size:12px;line-height:1.7;color:var(--text-faint,var(--text-sec,#94a3b8))}

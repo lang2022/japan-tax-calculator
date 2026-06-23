@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Shopping List Tax-Free Calculator (2026) | Calculate Multiple Items & Real Total</title>
-  <meta name="description" content="Enter multiple items (general goods/consumables) and estimate your Japan tax-free savings in one place. Designed for travelers building a shopping budget (2026).">
+  <title>Shopping List Tax-Free Planner (2026) | Estimate Multiple Items</title>
+  <meta name="description" content="Plan a Japan shopping list in 2026 by grouping multiple items, separating general goods from consumables, and checking how service fees change your final estimate.">
 
-  <meta property="og:title" content="Shopping List Tax‑Free Calculator (2026)">
-  <meta property="og:description" content="Calculate multiple items and plan your budget.">
+  <meta property="og:title" content="Shopping List Tax-Free Planner (2026)">
+  <meta property="og:description" content="Plan multiple items before you check out.">
 
   <link rel="canonical" href="https://refundjapan.com/en/tools/shopping-list/">
 
@@ -32,31 +32,40 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Can I calculate mixed categories together?",
+      "name": "Can I plan mixed categories together?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes—enter each item with its category and get a combined estimate."
+        "text": "Yes. Group general goods and consumables separately, then compare the totals in the calculator."
       }
     },
     {
       "@type": "Question",
-      "name": "Does it support stores with service fees?",
+      "name": "How should I handle service fees?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes—apply fee settings to estimate the real outcome."
+        "text": "Run the same list once as a standard shop and once as a department store to see the difference."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I save results?",
+      "name": "What is the easiest way to save my plan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This page is a skeleton—saving/sharing can be added next."
+        "text": "Keep your item totals in your notes app, then run the final grouped amounts through the calculator."
       }
     }
   ]
 }
   </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6231P53QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6231P53QB');
+    </script>
 </head>
 
 <body>
@@ -75,30 +84,53 @@
     </header>
 
     <section class="hero">
-      <h1>Shopping List Tax‑Free Calculator (2026)</h1>
-      <p>This is a UI skeleton page—next step is wiring it to your calculator logic.</p>
+      <h1>Plan a Shopping List Before You Queue</h1>
+      <p>Use this page as a quick worksheet for multiple items so you can group your basket, estimate your threshold, and avoid surprises at tax-free checkout.</p>
       <div class="cta-row">
-        <a class="btn primary" href="/en/">Back to calculator</a>
+        <a class="btn primary" href="/en/">Open the calculator</a>
         <a class="btn secondary" href="/en/tools/compare/">Compare scenarios</a>
       </div>
     </section>
 
     <main class="card">
-      <h2>Implement the shopping list UI here</h2>
-      <p class="small">Example: add rows (item name, price, category) → compute combined tax-free estimate, with optional service fee settings.</p>
+      <h2>How to plan your basket</h2>
+      <ol>
+        <li>List your items and note whether each one is a general good or a consumable.</li>
+        <li>Add the subtotals for each category.</li>
+        <li>Run each grouped amount in the calculator and compare store types if needed.</li>
+      </ol>
+
+      <div class="hr"></div>
+
+      <h2>Example list</h2>
+      <ul>
+        <li>Cosmetics: ¥3,200 (consumables)</li>
+        <li>Snacks: ¥2,100 (consumables)</li>
+        <li>Headphones: ¥12,000 (general goods)</li>
+      </ul>
+      <p class="small">In this example, the consumables subtotal is <strong>¥5,300</strong> and the general-goods subtotal is <strong>¥12,000</strong>. Checking both subtotals separately helps you understand how category and store policy affect the result.</p>
 
       <div class="cta-row">
-        <a class="btn primary" href="/en/tools/compare/">Compare split vs combine</a>
-        <a class="btn" href="/en/guide/consumables-vs-general/">General vs consumables</a>
+        <a class="btn primary" href="/en/">Test your list total</a>
+        <a class="btn" href="/en/guide/consumables-vs-general/">Review category differences</a>
       </div>
+
+      <div class="hr"></div>
+
+      <h2>What to watch for</h2>
+      <ul>
+        <li>Department store service fees can reduce your final refund.</li>
+        <li>Mixed baskets may be treated differently depending on the store.</li>
+        <li>Threshold and handling rules can vary by store policy.</li>
+      </ul>
 
       <div class="hr"></div>
 
       <h2>FAQ</h2>
       <section class="faq">
-        <details><summary>Can I calculate mixed categories together?</summary><p>Yes—enter each item with its category and get a combined estimate.</p></details>
-        <details><summary>Does it support stores with service fees?</summary><p>Yes—apply fee settings to estimate the real outcome.</p></details>
-        <details><summary>Can I save results?</summary><p>This page is a skeleton—saving/sharing can be added next.</p></details>
+        <details><summary>Can I plan mixed categories together?</summary><p>Yes. Group general goods and consumables separately, then compare the totals in the calculator.</p></details>
+        <details><summary>How should I handle service fees?</summary><p>Run the same list once as a standard shop and once as a department store to see the difference.</p></details>
+        <details><summary>What is the easiest way to save my plan?</summary><p>Keep your item totals in your notes app, then run the final grouped amounts through the calculator.</p></details>
       </section>
 
     </main>

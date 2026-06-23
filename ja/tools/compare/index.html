@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>免税の支払額を比較｜手数料あり/なし、分け会計/まとめ会計（2026）</title>
-  <meta name="description" content="免税後の“実際の支払額”を条件別に比較。百貨店の免税手数料あり/なし、分け会計/まとめ会計など、複数パターンを一括で見比べられます（2026）。">
+  <meta name="description" content="日本の免税で差が出やすい条件を2026年版で比較。百貨店の手数料、分け会計とまとめ会計、一般品と消耗品の違いを整理して、支払額の目安を見比べます。">
 
-  <meta property="og:title" content="免税比較ツール（2026）">
-  <meta property="og:description" content="条件を変えて、最適な買い方を選べます。">
+  <meta property="og:title" content="免税の比較ポイント（2026）">
+  <meta property="og:description" content="会計前に見ておきたい差が出る条件を整理。">
 
   <link rel="canonical" href="https://refundjapan.com/ja/tools/compare/">
 
@@ -32,31 +32,40 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "比較できる項目は？",
+      "name": "最初に何を比較すればいい？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "手数料あり/なし、会計方法、カテゴリ条件などを想定しています。"
+        "text": "まず店舗タイプを比較し、その次に分け会計とまとめ会計を見比べるのが分かりやすいです。"
       }
     },
     {
       "@type": "Question",
-      "name": "どんなときに比較が役立つ？",
+      "name": "比較が特に役立つのはどんな場面？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "百貨店手数料がある場合や、一般品/消耗品が混在する場合に差が出やすいです。"
+        "text": "百貨店の免税手数料がある場合や、一般品と消耗品が混在する場合に差が出やすいです。"
       }
     },
     {
       "@type": "Question",
-      "name": "比較結果は確定額ですか？",
+      "name": "このページの結果は確定額ですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "目安です。店舗運用や表示方法で差が出る可能性があります。"
+        "text": "いいえ。会計前の比較用です。最終金額は店舗運用や区分により変わることがあります。"
       }
     }
   ]
 }
   </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6231P53QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6231P53QB');
+    </script>
 </head>
 
 <body>
@@ -75,30 +84,49 @@
     </header>
 
     <section class="hero">
-      <h1>免税の支払額を比較する（2026）</h1>
-      <p>条件別に“到着額の目安”を見比べるページ（骨架）。今後あなたの計算UIを組み込みます。</p>
+      <h1>免税で差が出る条件を先に比べる</h1>
+      <p>百貨店の手数料、分け会計とまとめ会計、一般品と消耗品の違いなど、支払額に影響しやすい条件を整理して比較します。</p>
       <div class="cta-row">
-        <a class="btn primary" href="/ja/tools/compare/">条件を変えて比較する</a>
-        <a class="btn" href="/ja/tools/shopping-list/">買い物リストへ</a>
+        <a class="btn primary" href="/ja/">計算機を開く</a>
+        <a class="btn" href="/ja/guide/department-store-fee/">免税手数料の説明を見る</a>
       </div>
     </section>
 
     <main class="card">
-      <h2>ここに「比較UI」を実装</h2>
-      <p class="small">例：A案（手数料なし）/ B案（手数料あり）/ 分け会計/まとめ会計などを並べて表示。</p>
+      <h2>比較しておきたい3つのポイント</h2>
+      <ul>
+        <li><strong>標準店舗と百貨店:</strong> 百貨店では免税手数料が差し引かれることがあります。</li>
+        <li><strong>分け会計とまとめ会計:</strong> どちらが条件を満たしやすいかは買い方次第です。</li>
+        <li><strong>一般品と消耗品:</strong> 税率や運用の違いで結果が変わることがあります。</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <h2>かんたんな比較例</h2>
+      <p>税抜 <strong>¥5,000</strong> の一般品を標準店舗で購入した場合、還付目安は <strong>¥500</strong> です。同じ条件でも百貨店で <strong>1.55%</strong> の手数料があると、還付目安はおよそ <strong>¥422</strong> になります。</p>
+      <p class="small">会計前に店舗タイプを見比べるだけでも、実際の受け取り額のイメージがかなり変わります。</p>
 
       <div class="cta-row">
-        <a class="btn primary" href="/ja/guide/department-store-fee/">免税手数料の仕組み</a>
-        <a class="btn" href="/ja/guide/how-to-calculate/">計算方法（式と例）</a>
+        <a class="btn primary" href="/ja/">自分の金額で試す</a>
+        <a class="btn" href="/ja/guide/how-to-calculate/">計算式と例を見る</a>
       </div>
+
+      <div class="hr"></div>
+
+      <h2>このページの使い方</h2>
+      <ol>
+        <li>まず標準店舗で1回計算する。</li>
+        <li>次に百貨店条件で同じ金額を計算する。</li>
+        <li>一般品と消耗品が混在する場合は、カテゴリごとに見比べる。</li>
+      </ol>
 
       <div class="hr"></div>
 
       <h2>FAQ</h2>
       <section class="faq">
-        <details><summary>比較できる項目は？</summary><p>手数料あり/なし、会計方法、カテゴリ条件などを想定しています。</p></details>
-        <details><summary>どんなときに比較が役立つ？</summary><p>百貨店手数料がある場合や、一般品/消耗品が混在する場合に差が出やすいです。</p></details>
-        <details><summary>比較結果は確定額ですか？</summary><p>目安です。店舗運用や表示方法で差が出る可能性があります。</p></details>
+        <details><summary>最初に何を比較すればいい？</summary><p>まず店舗タイプを比較し、その次に分け会計とまとめ会計を見比べるのが分かりやすいです。</p></details>
+        <details><summary>比較が特に役立つのはどんな場面？</summary><p>百貨店の免税手数料がある場合や、一般品と消耗品が混在する場合に差が出やすいです。</p></details>
+        <details><summary>このページの結果は確定額ですか？</summary><p>いいえ。会計前の比較用です。最終金額は店舗運用や区分により変わることがあります。</p></details>
       </section>
 
     </main>
