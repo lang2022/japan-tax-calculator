@@ -1,0 +1,21 @@
+# 301 redirects for legacy .html URLs (canonical URL migration)
+# Supported by: Cloudflare Pages, Netlify.
+# For other hosts use the equivalents documented in README.md.
+
+/en/about.html      /en/about/      301
+/en/privacy.html    /en/privacy/    301
+
+/ja/about.html      /ja/about/      301
+/ja/privacy.html    /ja/privacy/    301
+
+/ko/about.html      /ko/about/      301
+/ko/privacy.html    /ko/privacy/    301
+
+/th/about.html      /th/about/      301
+/th/privacy.html    /th/privacy/    301
+
+/zhj/about.html     /zhj/about/     301
+/zhj/privacy.html   /zhj/privacy/   301
+
+/zhf/about.html     /zhf/about/     301
+/zhf/privacy.html   /zhf/privacy/   301

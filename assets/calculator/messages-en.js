@@ -1,9 +1,9 @@
 window.CALCULATOR_MESSAGES = {
-  pageTitle: "Japan Tax-Free Calculator 2026 | Estimate Your Refund in Seconds",
-  heroTitle: "Japan Tax-Free Calculator 2026",
-  heroDesc: "Estimate how much tax refund you can get back in Japan, with live exchange rates and department store fees factored in.",
-  auth: "Official Logic",
-  upd: "Updated: Jun 2026",
+  pageTitle: "Japan Tax Refund Calculator 2026 - Estimate Your Tax-Free Savings | RefundJapan",
+  heroTitle: "Japan Tax Refund Calculator 2026",
+  heroDesc: "Estimate how much tax refund you can get back in Japan, with live exchange rates and department store fees factored in. For reference only.",
+  auth: "Based on official tax rules",
+  upd: "Updated: Sep 2026",
   amt: "Total Amount",
   incl: "Tax Incl.",
   excl: "Tax Excl.",
@@ -11,23 +11,23 @@ window.CALCULATOR_MESSAGES = {
   cat1: "General Goods",
   cat1d: "Clothing/Tech (10%)",
   cat2: "Consumables",
-  cat2d: "Food/Cosme (8%)",
+  cat2d: "Food/Cosmetics (8%)",
   store: "Store Type",
   store1: "Standard Shop",
   store1d: "Full Refund (0 Fee)",
-  store2: "Dept Store",
+  store2: "Dept. Store",
   store2d: "Service Fee (~1.55%)",
   res: "Net Refund Amount",
   curTarget: "USD",
-  curName: "USD Dollar",
+  curName: "US Dollar",
   copyBtn: "Copy Link",
-  copyOk: "Copied!",
-  lowAmt: "Need ¥${diff} more to reach ¥5,000 threshold",
-  highCap: "💡 Capped at ¥500k tax-free limit",
-  adv0: "Enter amount for queueing advice",
-  adv1: "Advice: Low refund, skip if queue is long",
-  adv2: "Advice: Worth waiting for refund",
-  adv3: "Advice: Significant refund, must queue!",
+  copyOk: "Link copied!",
+  lowAmt: "Need ¥${diff} more to reach the ¥5,000 threshold",
+  highCap: "Estimated with the ¥500,000 tax-free limit applied",
+  adv0: "Enter amount to estimate your refund",
+  adv1: "Tip: Small refund — fine to skip if the queue is long",
+  adv2: "Tip: Reasonable refund — worth the wait",
+  adv3: "Tip: Large refund — definitely worth claiming!",
   adRate: "Live Exchange Rate",
   adJpy: "1 JPY ≈ ",
   shareL: "Share on LINE",
@@ -48,6 +48,8 @@ window.CALCULATOR_MESSAGES = {
       <li><a href="/en/guide/common-mistakes/">Common tax-free mistakes to avoid</a></li>
       <li><a href="/en/guide/minimum-maximum/">Minimum spend and eligibility basics</a></li>
       <li><a href="/en/guide/japan-tourist-tax-2026/">Japan tourist tax 2026 explained</a></li>
+      <li><a href="/en/tools/compare/">Compare split vs combined checkout</a></li>
+      <li><a href="/en/tools/shopping-list/">Build your tax-free shopping list</a></li>
     </ul>
     <div class="authority-module">
       <h3>Official sources</h3>
@@ -58,7 +60,7 @@ window.CALCULATOR_MESSAGES = {
       </ul>
       <p><small>Store procedures, item classification, and policy updates can affect the final amount, so treat this calculator as a practical estimate rather than a legal quote.</small></p>
     </div>`,
-  footer: "Calculation results are for reference only.",
+  footer: "Calculation results are estimates for reference only. Actual refund amounts depend on store policy.",
   linkAbout: "About Us",
   linkPrivacy: "Privacy Policy"
 };

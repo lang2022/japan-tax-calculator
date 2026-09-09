@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <meta name="description" content="ライブレートと手数料検出による即時税金還付計算">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="日本税金還付計算機 2026">
     <meta property="og:description" content="ライブレートと手数料検出による即時税金還付計算">
     <meta property="og:image" content="/assets/og/og-image.jpg">
@@ -49,7 +49,7 @@
     }
     </script>
 
-    <title>日本税金還付計算機 2026 - 公式免税ガイド</title>
+    <title>日本税金還付計算機 2026 - 免税ガイド</title>
 
     <link rel="canonical" href="https://refundjapan.com/ja/" />
     <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
@@ -58,7 +58,7 @@
     <link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
     <link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
     <link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
-    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/calculator/home-common.css">
     <link rel="stylesheet" href="/assets/calculator/home-compact.css">
@@ -77,12 +77,18 @@
 
 <div class="app">
     <div class="auth-badge">
-        <span id="t-upd">更新日：2026年6月</span> • <span id="t-auth">公式ロジック</span>
+        <span id="t-upd">更新日：2026年9月</span> • <span id="t-auth">公的ルールに基づく試算</span>
     </div>
 
     <header>
-        <a href="/ja/" class="logo" style="color: inherit; text-decoration: none;">TAXFREE.JP</a>
+        <a href="/ja/" class="logo" style="color: inherit; text-decoration: none;">RefundJapan</a>
     </header>
+    <nav class="home-nav" aria-label="サイト内ナビゲーション">
+        <a href="/ja/" class="active" aria-current="page">計算機</a>
+        <a href="/ja/guide/">ガイド</a>
+        <a href="/ja/tools/compare/">比較</a>
+        <a href="/ja/tools/shopping-list/">リスト</a>
+    </nav>
 
     <div class="hero">
         <h1 id="t-hero-title">日本の税金還付計算機 2026</h1>
@@ -91,8 +97,8 @@
 
     <a href="#" class="ad-banner">
         <div>
-            <b id="t-ad-rate">ライブ為替レート</b>
-            <span id="t-ad-jpy">1 JPY ≈</span> <span id="live-rate">0.0068</span>
+            <b id="t-ad-rate">免税の目安</b>
+            <span id="t-ad-jpy">同日・同店で</span> <span id="live-rate">5,000 円（税抜）以上</span>
         </div>
         <div style="font-size: 20px;">➔</div>
     </a>
@@ -135,20 +141,59 @@
         <div class="res-cur">
             <div>≈ <span id="res-c1">0</span> <span id="cur-1">USD</span></div>
         </div>
-        <div class="advice-box" id="advice-box">キュー待機アドバイスを入力してください</div>
+        <div class="advice-box" id="advice-box">金額を入力すると還付額の目安とアドバイスが表示されます</div>
     </div>
+
+    <section class="rec-section" id="recSection" aria-label="次に確認すると役立つ情報">
+        <div class="rec-section-head">
+            <h3>次に確認すると役立つ情報</h3>
+            <span class="rec-hint" id="recHint">計算結果に合わせて表示</span>
+        </div>
+        <div class="rec-grid">
+            <a class="rec-card" data-rec="fee" href="/ja/guide/department-store-fee/"><span class="rec-badge">おすすめ</span><b>なぜ 10% にならない？</b><span>百貨店の手数料で起きること</span><small>約1.55%が差し引かれることあり</small></a>
+            <a class="rec-card" data-rec="threshold" href="/ja/guide/minimum-maximum/"><span class="rec-badge">おすすめ</span><b>5,000円の壁を越えられる？</b><span>同一店舗・同日のルール</span><small>合算できる条件あり</small></a>
+            <a class="rec-card" data-rec="category" href="/ja/guide/consumables-vs-general/"><span class="rec-badge">おすすめ</span><b>一般物品と消耗品の違い</b><span>税率 10% と 8% の分け方</span><small>カテゴリーで税率が変わる</small></a>
+            <a class="rec-card" data-rec="compare" href="/ja/tools/compare/"><span class="rec-badge">おすすめ</span><b>比較してから並ぶ</b><span>分割レジと一括レジ</span><small>その場で差額を確認</small></a>
+        </div>
+    </section>
 
     <div class="share-stack">
         <button class="share-btn line" id="t-share-line" onclick="socialShare('line')">LINEで共有</button>
         <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">計算リンクをコピー</button>
     </div>
 
-    <section class="seo-box" id="seoArea"></section>
+    <section class="seo-box" id="seoArea"><h2>2026 年 日本消費税還付に関するよくあるご質問</h2>
+    <p><strong>日本国税庁(NTA)の最新規定によると</strong>、訪日外国人の方が日本でのお買い物で特定の条件を満たす場合、免税待遇を受けることができます。</p>
+    <h3>1. 免税の基準額はいくらですか？</h3>
+    <p><strong>日本国税庁(NTA)の最新規定によると</strong>、同一店舗で同日に<b>5,000 円</b>（税抜）以上お買い上げいただくと、免税手続きが可能です。</p>
+    <h3>2. 一般物品と消耗品の違い</h3>
+    <p>一般物品（衣類、家電）の税率は 10%、消耗品（食品、化粧品）の税率は 8% です。<strong>日本観光庁(JTA)のガイドラインでは</strong>、消耗品は免税後、特別なパッケージに密封され、日本国内では開封・使用できません。</p>
+    <h3>3. なぜ還付額が 10% より少ないのですか？</h3>
+    <p>主要デパート（三越、高島屋など）では、通常約 <b>1.55%</b> のサービス手数料が差し引かれます。<strong>日本観光庁(JTA)のガイドラインでは</strong>、これは一般的な慣行です。当ツールは「デパート」オプションに対応し、最終的なお受取額を計算します。</p>
+    <div class="formula-box">実際の還付額 = (税抜価格 × 税率) - (税抜価格 × 手数料率)</div>
+    <h3>関連ガイドとツール</h3>
+    <ul>
+      <li><a href="/ja/guide/how-to-calculate/">日本の還付額の計算方法</a></li>
+      <li><a href="/ja/guide/department-store-fee/">百貨店の手数料と還付額の関係</a></li>
+      <li><a href="/ja/guide/minimum-maximum/">免税の最低金額と上限の目安</a></li>
+      <li><a href="/ja/guide/common-mistakes/">免税でよくある間違い</a></li>
+      <li><a href="/ja/tools/compare/">レジ分割と一括支払いの比較ツール</a></li>
+      <li><a href="/ja/tools/shopping-list/">免税ショッピングリスト作成ツール</a></li>
+    </ul>
+    <div class="authority-module">
+      <h3>公式情報源と参考資料</h3>
+      <p>この計算機のロジックは、日本の公式機関が発表した規定に厳密に基づいています。最も権威ある情報については、以下をご覧ください：</p>
+      <ul>
+        <li><strong>国税庁 (NTA)</strong>: <a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm" target="_blank" rel="noopener">消費税の非課税制度に関する公式説明</a></li>
+        <li><strong>観光庁 (JTA)</strong>: <a href="https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/" target="_blank" rel="noopener">訪日外国人向け免税ショッピングガイド</a></li>
+      </ul>
+      <p><small>ご注意：政策は更新される可能性があります。上記の公式リンクが最も正確な情報を提供します。</small></p>
+    </div></section>
 
     <div class="footer-links" style="text-align: center; margin-top: 20px;">
-        <a href="/ja/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">私たちについて</a>
+        <a href="/ja/about/" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">私たちについて</a>
         <span style="color: #D1D1D6;">|</span>
-        <a href="/ja/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">プライバシーポリシー</a>
+        <a href="/ja/privacy/" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">プライバシーポリシー</a>
         <span style="color: #D1D1D6;">|</span>
         <a href="/sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">サイトマップ</a>
     </div>

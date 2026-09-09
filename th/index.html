@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <meta name="description" content="การคำนวณคืนภาษีทันทีด้วยอัตราและการตรวจสอบค่าธรรมเนียมแบบเรียลไทม์">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="เครื่องคำนวณการคืนภาษีญี่ปุ่น 2026">
     <meta property="og:description" content="การคำนวณคืนภาษีทันทีด้วยอัตราและการตรวจสอบค่าธรรมเนียมแบบเรียลไทม์">
     <meta property="og:image" content="/assets/og/og-image.jpg">
@@ -49,7 +49,7 @@
     }
     </script>
 
-    <title>เครื่องคำนวณการคืนภาษีญี่ปุ่น 2026 - คู่มือปลอดภาษีอย่างเป็นทางการ</title>
+    <title>เครื่องคำนวณการคืนภาษีญี่ปุ่น 2026 - คู่มือปลอดภาษี</title>
 
     <link rel="canonical" href="https://refundjapan.com/th/" />
     <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
@@ -58,7 +58,7 @@
     <link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
     <link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
     <link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
-    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/calculator/home-common.css">
     <link rel="stylesheet" href="/assets/calculator/home-compact.css">
@@ -77,12 +77,16 @@
 
 <div class="app">
     <div class="auth-badge">
-        <span id="t-upd">อัปเดต: ธันวาคม 2026</span> • <span id="t-auth">ตราสัญลักษณ์ทางการ</span>
+        <span id="t-upd">อัปเดต: ก.ย. 2026</span> • <span id="t-auth">อ้างอิงกฎทางการ</span>
     </div>
 
     <header>
-        <a href="/th/" class="logo" style="color: inherit; text-decoration: none;">TAXFREE.JP</a>
+        <a href="/th/" class="logo" style="color: inherit; text-decoration: none;">RefundJapan</a>
     </header>
+    <nav class="home-nav" aria-label="Site navigation">
+        <a href="/th/" class="active" aria-current="page">Calculator</a>
+        <a href="/en/guide/how-to-calculate/">Guide (EN)</a>
+    </nav>
 
     <div class="hero">
         <h1 id="t-hero-title">เครื่องคิดเลขการขอคืนภาษีจากญี่ปุ่น 2026</h1>
@@ -138,17 +142,54 @@
         <div class="advice-box" id="advice-box">กรุณากรอกจำนวนเงินเพื่อคำแนะนำการคิว</div>
     </div>
 
+    <section class="rec-section" id="recSection" aria-label="คำแนะนำถัดไป">
+        <div class="rec-section-head">
+            <h3>สิ่งที่ควรตรวจสอบถัดไป</h3>
+            <span class="rec-hint" id="recHint">เลือกให้ตามผลลัพธ์ของคุณ</span>
+        </div>
+        <div class="rec-grid">
+            <a class="rec-card" data-rec="fee" href="/en/guide/department-store-fee/"><span class="rec-badge">แนะนำ</span><b>ทำไมยอดคืนน้อยกว่า 10%</b><span>ค่าธรรมเนียมห้าง (~1.55%)</span><small>หักก่อนจ่ายคืน</small></a>
+            <a class="rec-card" data-rec="threshold" href="/en/guide/minimum-maximum/"><span class="rec-badge">แนะนำ</span><b>ยังถึงเกณฑ์ 5,000 เยนไหม?</b><span>กฎร้านเดียวกัน·วันเดียวกัน</span><small>รวมยอดได้ในบางกรณี</small></a>
+            <a class="rec-card" data-rec="category" href="/en/guide/consumables-vs-general/"><span class="rec-badge">แนะนำ</span><b>สินค้าทั่วไป vs สินค้าอุปโภค</b><span>10% กับ 8% ต่างกันอย่างไร</span><small>ประเภทมีผลต่ออัตรา</small></a>
+            <a class="rec-card" data-rec="compare" href="/en/tools/compare/"><span class="rec-badge">แนะนำ</span><b>เปรียบเทียบก่อนต่อคิว</b><span>แยกบิล vs รวมบิล</span><small>เห็นส่วนต่างทันที</small></a>
+        </div>
+    </section>
+
     <div class="share-stack">
         <button class="share-btn line" id="t-share-line" onclick="socialShare('line')">แชร์บน LINE</button>
         <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">คัดลอกลิงก์การคำนวณ</button>
     </div>
 
-    <section class="seo-box" id="seoArea"></section>
+    <section class="seo-box" id="seoArea"><h2>คำถามที่พบบ่อยเกี่ยวกับการคืนภาษีญี่ปุ่น 2026</h2>
+    <p><strong>ตามข้อกำหนดล่าสุดของกรมสรรพากร (NTA) ประเทศญี่ปุ่น</strong> นักท่องเที่ยวต่างชาติสามารถเพลิดเพลินกับการยกเว้นภาษีเมื่อช้อปปิ้งในญี่ปุ่นหากเป็นไปตามเงื่อนไขที่กำหนด</p>
+    <h3>1. เกณฑ์ขั้นต่ำในการยกเว้นภาษีคือเท่าไหร่？</h3>
+    <p><strong>ตามข้อกำหนดล่าสุดของกรมสรรพากร (NTA) ประเทศญี่ปุ่น</strong> คุณต้องซื้อสินค้าครบ <b>5,000 เยน</b> (ไม่รวมภาษี) ในร้านเดียวกันภายในวันเดียวกันเพื่อขอคืนภาษี</p>
+    <h3>2. สินค้าทั่วไป vs สินค้าอุปโภคบริโภค</h3>
+    <p>อัตราภาษีสำหรับสินค้าทั่วไป (เสื้อผ้า, เครื่องใช้ไฟฟ้า) คือ 10% ในขณะที่สินค้าอุปโภคบริโภค (อาหาร, เครื่องสำอาง) คือ 8% <strong>แนวทางจากสำนักงานการท่องเที่ยวญี่ปุ่น (JTA) ระบุว่า</strong> สินค้าอุปโภคบริโภคจะถูกบรรจุในถุงพิเศษและห้ามแกะใช้ในประเทศญี่ปุ่น</p>
+    <h3>3. ทำไมยอดคืนภาษีถึงน้อยกว่า 10%？</h3>
+    <p>ห้างสรรพสินค้าขนาดใหญ่ (เช่น Mitsukoshi, Takashimaya) มักจะหักค่าธรรมเนียมบริการประมาณ <b>1.55%</b> <strong>แนวทางจากสำนักงานการท่องเที่ยวญี่ปุ่น (JTA) ระบุว่า</strong> นี่เป็นแนวทางปฏิบัติทั่วไป เครื่องมือนี้รองรับตัวเลือก "ห้างสรรพสินค้า" เพื่อคำนวณยอดสุทธิที่คุณจะได้รับจริง</p>
+    <div class="formula-box">ยอดคืนภาษีจริง = (ราคาก่อนภาษี × อัตราภาษี) - (ราคาก่อนภาษี × อัตราค่าธรรมเนียม)</div>
+    <h3>คู่มือที่เกี่ยวข้อง (ภาษาอังกฤษ)</h3>
+    <ul>
+      <li><a href="/en/guide/how-to-calculate/">วิธีคำนวณยอดคืนภาษี</a></li>
+      <li><a href="/en/guide/department-store-fee/">ค่าธรรมเนียมห้างสรรพสินค้ากระทบยอดคืนอย่างไร</a></li>
+      <li><a href="/en/guide/minimum-maximum/">ยอดขั้นต่ำและเพดานสำหรับช้อปปลอดภาษี</a></li>
+      <li><a href="/en/guide/common-mistakes/">ข้อผิดพลาดที่พบบ่อย</a></li>
+    </ul>
+    <div class="authority-module">
+      <h3>แหล่งข้อมูลทางการและข้อมูลอ้างอิง</h3>
+      <p>ตรรกะของเครื่องคำนวณนี้ยึดตามข้อกำหนดที่เผยแพร่โดยหน่วยงานทางการของญี่ปุ่น สำหรับข้อมูลที่มีอำนาจหน้าที่มากที่สุด โปรดไปที่:</p>
+      <ul>
+        <li><strong>กรมสรรพากร (NTA)</strong>: <a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm" target="_blank" rel="noopener">คำอธิบายทางการเกี่ยวกับระบบยกเว้นภาษีมูลค่าเพิ่ม (ภาษาญี่ปุ่น)</a></li>
+        <li><strong>สำนักงานการท่องเที่ยวญี่ปุ่น (JTA)</strong>: <a href="https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/" target="_blank" rel="noopener">แนวทางช้อปปิ้งปลอดภาษีสำหรับผู้มาเยือน (ภาษาญี่ปุ่น)</a></li>
+      </ul>
+      <p><small>หมายเหตุ: นโยบายอาจมีการอัปเดต ลิงก์ทางการข้างต้นให้ข้อมูลที่ถูกต้องที่สุด</small></p>
+    </div></section>
 
     <div class="footer-links" style="text-align: center; margin-top: 20px;">
-        <a href="/th/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">เกี่ยวกับเรา</a>
+        <a href="/th/about/" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">เกี่ยวกับเรา</a>
         <span style="color: #D1D1D6;">|</span>
-        <a href="/th/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">นโยบายความเป็นส่วนตัว</a>
+        <a href="/th/privacy/" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">นโยบายความเป็นส่วนตัว</a>
         <span style="color: #D1D1D6;">|</span>
         <a href="/sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">แผนผังเว็บไซต์</a>
     </div>

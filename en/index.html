@@ -9,8 +9,8 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <meta name="description" content="Use this Japan tax-free and tax refund calculator to estimate how much refund you can get back, including department store fees and live exchange rates.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Estimate your Japan tax refund before you shop. This free calculator factors in the 10%/8% tax rates, department store fees and live exchange rates. No sign-up needed.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Japan Tax-Free Calculator 2026">
     <meta property="og:description" content="Estimate how much tax refund you can get back in Japan, with fees and live rates included.">
     <meta property="og:image" content="/assets/og/og-image.jpg">
@@ -57,7 +57,7 @@
     }
     </script>
 
-    <title>Japan Tax Refund Calculator 2026 - Official Duty-Free Guide</title>
+    <title>Japan Tax Refund Calculator 2026 - Estimate Your Tax-Free Savings | RefundJapan</title>
     <link rel="canonical" href="https://refundjapan.com/en/" />
     <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
     <link rel="alternate" hreflang="zh-Hant" href="https://refundjapan.com/zhf/" />
@@ -65,7 +65,7 @@
     <link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
     <link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
     <link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
-    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/" />
     <link rel="stylesheet" href="/assets/calculator/home-common.css">
     <link rel="stylesheet" href="/assets/calculator/home-compact.css">
 
@@ -83,12 +83,18 @@
 
 <div class="app">
     <div class="auth-badge">
-        <span id="t-upd">Updated: Jun 2026</span> • <span id="t-auth">Official Logic</span>
+        <span id="t-upd">Updated: Sep 2026</span> • <span id="t-auth">Based on official tax rules</span>
     </div>
 
     <header>
-        <a href="/en/" class="logo" style="color: inherit; text-decoration: none;">TAXFREE.JP</a>
+        <a href="/en/" class="logo" style="color: inherit; text-decoration: none;">RefundJapan</a>
     </header>
+    <nav class="home-nav" aria-label="Site sections">
+        <a href="/en/" class="active" aria-current="page">Calculator</a>
+        <a href="/en/guide/">Guide</a>
+        <a href="/en/tools/compare/">Compare</a>
+        <a href="/en/tools/shopping-list/">List</a>
+    </nav>
 
     <div class="hero">
         <h1 id="t-hero-title">Japan Tax Refund Calculator 2026</h1>
@@ -141,20 +147,61 @@
         <div class="res-cur">
             <div>≈ <span id="res-c1">0</span> <span id="cur-1">USD</span></div>
         </div>
-        <div class="advice-box" id="advice-box">Enter amount for queueing advice</div>
+        <div class="advice-box" id="advice-box">Enter your purchase amount to see refund tips</div>
     </div>
+
+    <section class="rec-section" id="recSection" aria-label="Recommended next steps">
+        <div class="rec-section-head">
+            <h3>What to check next</h3>
+            <span class="rec-hint" id="recHint">Picked for your result</span>
+        </div>
+        <div class="rec-grid">
+            <a class="rec-card" data-rec="fee" href="/en/guide/department-store-fee/"><span class="rec-badge">Recommended</span><b>Why the refund is less than 10%</b><span>Department store service fees explained</span><small>~1.55% often deducted before payout</small></a>
+            <a class="rec-card" data-rec="threshold" href="/en/guide/minimum-maximum/"><span class="rec-badge">Recommended</span><b>Can you still reach the threshold?</b><span>The ¥5,000 rule &amp; combining items</span><small>Same store, same day</small></a>
+            <a class="rec-card" data-rec="category" href="/en/guide/consumables-vs-general/"><span class="rec-badge">Recommended</span><b>General vs consumables</b><span>10% vs 8% and sealing rules</span><small>Category changes the rate</small></a>
+            <a class="rec-card" data-rec="compare" href="/en/tools/compare/"><span class="rec-badge">Recommended</span><b>Compare before you queue</b><span>Split vs combined checkout</span><small>See the difference instantly</small></a>
+        </div>
+    </section>
 
     <div class="share-stack">
         <button class="share-btn line" id="t-share-line" onclick="socialShare('line')">Share on LINE</button>
         <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">Copy Calculation Link</button>
     </div>
 
-    <section class="seo-box" id="seoArea"></section>
+    <section class="seo-box" id="seoArea"><h2>Japan Tax-Free and Tax Refund Guide 2026</h2>
+    <p><strong>If you are trying to work out how much tax refund you can get back in Japan, this calculator gives you a practical estimate</strong> after tax-free rules, item category, and department store fees are taken into account.</p>
+    <h3>1. Minimum spend</h3>
+    <p>In most standard tax-free shopping scenarios, you need to spend at least <b>¥5,000 before tax</b> in the same store on the same day. This is the minimum spend threshold used by the calculator.</p>
+    <h3>2. Refund rate</h3>
+    <p>The refund rate is not always the same in practice. General goods are commonly estimated at <b>10%</b>, while consumables are often estimated at <b>8%</b>. Your actual result can still vary depending on how the store handles categories and packaging.</p>
+    <h3>3. Department store fees</h3>
+    <p>Some major department stores deduct a tax-free handling fee - often around <b>1.55%</b> - before you receive your final refund amount. That is one of the main reasons why the amount you get back can be lower than the headline tax rate.</p>
+    <div class="formula-box">Estimated refund = (Pre-tax amount × tax rate) - (Pre-tax amount × fee rate)</div>
+    <h3>Useful guides</h3>
+    <ul>
+      <li><a href="/en/guide/how-to-calculate/">How to calculate your tax-free refund</a></li>
+      <li><a href="/en/guide/department-store-fee/">Why department store fees reduce your refund</a></li>
+      <li><a href="/en/guide/consumables-vs-general/">General goods vs consumables</a></li>
+      <li><a href="/en/guide/common-mistakes/">Common tax-free mistakes to avoid</a></li>
+      <li><a href="/en/guide/minimum-maximum/">Minimum spend and eligibility basics</a></li>
+      <li><a href="/en/guide/japan-tourist-tax-2026/">Japan tourist tax 2026 explained</a></li>
+      <li><a href="/en/tools/compare/">Compare split vs combined checkout</a></li>
+      <li><a href="/en/tools/shopping-list/">Build your tax-free shopping list</a></li>
+    </ul>
+    <div class="authority-module">
+      <h3>Official sources</h3>
+      <p>For the most authoritative information, check the official guidance published by Japanese government agencies:</p>
+      <ul>
+        <li><strong>National Tax Agency (NTA)</strong>: <a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm" target="_blank" rel="noopener">Consumption tax exemption guidance (Japanese)</a></li>
+        <li><strong>Japan Tourism Agency (JTA)</strong>: <a href="https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/" target="_blank" rel="noopener">Tax-free shopping guidance for visitors (Japanese)</a></li>
+      </ul>
+      <p><small>Store procedures, item classification, and policy updates can affect the final amount, so treat this calculator as a practical estimate rather than a legal quote.</small></p>
+    </div></section>
 
     <div class="footer-links" style="text-align: center; margin-top: 20px;">
-        <a href="/en/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">About Us</a>
+        <a href="/en/about/" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">About Us</a>
         <span style="color: #D1D1D6;">|</span>
-        <a href="/en/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">Privacy Policy</a>
+        <a href="/en/privacy/" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">Privacy Policy</a>
         <span style="color: #D1D1D6;">|</span>
         <a href="/sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">Sitemap</a>
     </div>

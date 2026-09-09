@@ -40,7 +40,7 @@
   function updateBannerRate() {
     const rateVal = globalRates[messages.curTarget];
     const rateNode = document.getElementById("live-rate");
-    if (rateNode && typeof rateVal === "number") {
+    if (rateNode && typeof rateVal === "number" && rateVal !== 1) {
       rateNode.innerText = rateVal.toFixed(4);
     }
   }
@@ -55,6 +55,29 @@
     selector.value = selectedValue;
     selector.addEventListener("change", function (event) {
       window.location.href = event.target.value;
+    });
+  }
+
+  function updateRecommendations(val, snap) {
+    const cards = document.querySelectorAll(".rec-card");
+    if (!cards.length) return;
+    cards.forEach(function (c) { c.classList.remove("is-highlight"); });
+    let target = "compare";
+    if (!val) target = "fee";
+    else if (snap.isLow) target = "threshold";
+    else if (state.fee > 0) target = "fee";
+    else if (state.rate === 0.08) target = "category";
+    const el = document.querySelector('.rec-card[data-rec="' + target + '"]');
+    if (el) el.classList.add("is-highlight");
+  }
+
+  function bindRecommendationTracking() {
+    document.querySelectorAll(".rec-card").forEach(function (card) {
+      card.addEventListener("click", function () {
+        try {
+          if (typeof gtag === "function") gtag("event", "rec_click", { rec_id: card.dataset.rec, lang: state.lang });
+        } catch (e) {}
+      });
     });
   }
 
@@ -125,6 +148,7 @@
     setText("res-jpy", refund.toLocaleString());
     const targetRate = globalRates[messages.curTarget];
     setText("res-c1", (refund * targetRate).toFixed(messages.curTarget === "USD" ? 2 : 1).toLocaleString());
+    updateRecommendations(val, { isLow: isLow });
   }
 
   function bindToggleGroup(selector, key) {
@@ -179,6 +203,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     renderMessages();
     updateLanguageSelector();
+    bindRecommendationTracking();
     document.getElementById("amtInput").addEventListener("input", calculate);
     bindToggleGroup(".tax-toggle span", "mode");
     bindToggleGroup("#catGroup .seg-item", "rate");

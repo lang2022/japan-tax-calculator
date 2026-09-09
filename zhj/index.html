@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <meta name="description" content="实时税务退税计算，带有实时汇率和费用检测功能">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="日本税务退税计算器 2026">
     <meta property="og:description" content="实时税务退税计算，带有实时汇率和费用检测功能">
     <meta property="og:image" content="/assets/og/og-image.jpg">
@@ -49,7 +49,7 @@
     }
     </script>
 
-    <title>日本税务退税计算器 2026 - 官方免税指南</title>
+    <title>2026 日本退税计算器 - 购物免税额度实时估算 | RefundJapan</title>
 
     <link rel="canonical" href="https://refundjapan.com/zhj/" />
     <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
@@ -58,7 +58,7 @@
     <link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
     <link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
     <link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
-    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/calculator/home-common.css">
     <link rel="stylesheet" href="/assets/calculator/home-compact.css">
@@ -77,12 +77,18 @@
 
 <div class="app">
     <div class="auth-badge">
-        <span id="t-upd">更新日期：2026年6月</span> • <span id="t-auth">官方逻辑</span>
+        <span id="t-upd">更新日期：2026年9月</span> • <span id="t-auth">基于官方规则估算</span>
     </div>
 
     <header>
-        <a href="/zhj/" class="logo" style="color: inherit; text-decoration: none;">TAXFREE.JP</a>
+        <a href="/zhj/" class="logo" style="color: inherit; text-decoration: none;">RefundJapan</a>
     </header>
+    <nav class="home-nav" aria-label="Site navigation">
+        <a href="/zhj/" class="active" aria-current="page">计算器</a>
+        <a href="/zhj/guide/how-to-calculate/">指南</a>
+        <a href="/zhj/guide/department-store-fee/">手续费</a>
+        <a href="/zhj/guide/common-mistakes/">常见错误</a>
+    </nav>
 
     <div class="hero">
         <h1 id="t-hero-title">日本税款退还计算器 2026</h1>
@@ -143,12 +149,49 @@
         <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">复制计算链接</button>
     </div>
 
-    <section class="seo-box" id="seoArea"></section>
+    <section class="rec-section" id="recSection" aria-label="下一步该看什么">
+        <div class="rec-section-head">
+            <h3>下一步该看什么</h3>
+            <span class="rec-hint" id="recHint">根据你的计算结果推荐</span>
+        </div>
+        <div class="rec-grid">
+            <a class="rec-card" data-rec="fee" href="/zhj/guide/department-store-fee/"><span class="rec-badge">推荐</span><b>为什么实拿少于 10%</b><span>百货公司免税手续费约 1.55%</span><small>到手前会先扣</small></a>
+            <a class="rec-card" data-rec="threshold" href="/en/guide/minimum-maximum/"><span class="rec-badge">推荐</span><b>还能凑够 5,000 日元吗？</b><span>同店同日规则与合并结账</span><small>英文说明含更多示例</small></a>
+            <a class="rec-card" data-rec="category" href="/en/guide/consumables-vs-general/"><span class="rec-badge">推荐</span><b>一般物品 vs 消耗品</b><span>10% 与 8% 的差别与封装</span><small>类别决定税率</small></a>
+            <a class="rec-card" data-rec="compare" href="/en/tools/compare/"><span class="rec-badge">推荐</span><b>先对比，再排队</b><span>分开结账 vs 合并结账</span><small>立刻看到差距</small></a>
+        </div>
+    </section>
+
+    <section class="seo-box" id="seoArea"><h2>2026 日本消费税退税规则 FAQ</h2>
+    <p>根据日本国税厅(NTA)最新规定，外国游客在日本购物满足特定条件即可享受免税待遇。</p>
+    <h3>1. 免税门槛是多少？</h3>
+    <p>在同一家店同一天购物满 <b>5,000 日元</b>（不含税）即可办理退税。本计算器会自动检测您的金额是否达标。</p>
+    <h3>2. 一般物品 vs 消耗品</h3>
+    <p>日本观光厅 (JTA) 的指南中指出，一般物品（服饰、电器）税率为 10%；消耗品（食品、化妆品）税率为 8%。消耗品退税后会被特殊包装，在日本境内不得拆封使用。</p>
+    <h3>3. 为什么退税金额少于 10%？</h3>
+    <p>大型百货公司（如三越、高岛屋）通常会扣除约 <b>1.55%</b> 的服务手续费。本工具支持“百货公司”选项，自动计算最终到手净额。</p>
+    <div class="formula-box">实际退税 = (不含税价格 × 税率) - (不含税价格 × 手续费率)</div>
+    <h3>延伸阅读</h3>
+    <ul>
+      <li><a href="/zhj/guide/how-to-calculate/">日本退税怎么算？</a></li>
+      <li><a href="/zhj/guide/department-store-fee/">百货公司手续费如何影响退税？</a></li>
+      <li><a href="/zhj/guide/common-mistakes/">免税购物常见错误</a></li>
+      <li><a href="/en/guide/minimum-maximum/">免税门槛与资格重点（英文说明）</a></li>
+    </ul>
+    <div class="authority-module">
+      <h3>官方信息来源与参考</h3>
+      <p>本计算器的逻辑基于日本国税厅的官方规定。如需查阅最权威、最详细的法律条文，请访问以下链接（日文）：</p>
+      <ul>
+        <li><strong>日本国税厅 (National Tax Agency)</strong>: <a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm" target="_blank" rel="noopener">关于消费税免税制度的官方说明</a></li>
+        <li><strong>观光厅（Japan Tourism Agency）</strong>: <a href="https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/" target="_blank" rel="noopener">面向访日游客的免税指南</a></li>
+      </ul>
+      <p class="footer-note"><small>请注意：相关政策可能更新，以上官方链接提供最准确的信息。</small></p>
+    </div></section>
 
     <div class="footer-links" style="text-align: center; margin-top: 20px;">
-        <a href="/zhj/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">关于我们</a>
+        <a href="/zhj/about/" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">关于我们</a>
         <span style="color: #D1D1D6;">|</span>
-        <a href="/zhj/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">隐私政策</a>
+        <a href="/zhj/privacy/" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">隐私政策</a>
         <span style="color: #D1D1D6;">|</span>
         <a href="/sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">网站地图</a>
     </div>

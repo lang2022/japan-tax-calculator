@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <meta name="description" content="실시간 환율 및 수수료 감지를 통한 즉각적인 세금 환급 계산">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="일본 세금 환급 계산기 2026">
     <meta property="og:description" content="실시간 환율 및 수수료 감지를 통한 즉각적인 세금 환급 계산">
     <meta property="og:image" content="/assets/og/og-image.jpg">
@@ -49,7 +49,7 @@
     }
     </script>
 
-    <title>일본 세금 환급 계산기 2026 - 공식 면세 가이드</title>
+    <title>일본 세금 환급 계산기 2026 - 면세 쇼핑 가이드</title>
 
     <link rel="canonical" href="https://refundjapan.com/ko/" />
     <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
@@ -58,7 +58,7 @@
     <link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
     <link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
     <link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
-    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/calculator/home-common.css">
     <link rel="stylesheet" href="/assets/calculator/home-compact.css">
@@ -77,12 +77,16 @@
 
 <div class="app">
     <div class="auth-badge">
-        <span id="t-upd">업데이트: 2026년 6월</span> • <span id="t-auth">공식 로직</span>
+        <span id="t-upd">업데이트: 2026년 9월</span> • <span id="t-auth">공식 규정 기반 예상치</span>
     </div>
 
     <header>
-        <a href="/ko/" class="logo" style="color: inherit; text-decoration: none;">TAXFREE.JP</a>
+        <a href="/ko/" class="logo" style="color: inherit; text-decoration: none;">RefundJapan</a>
     </header>
+    <nav class="home-nav" aria-label="Site navigation">
+        <a href="/ko/" class="active" aria-current="page">Calculator</a>
+        <a href="/en/guide/how-to-calculate/">Guide (EN)</a>
+    </nav>
 
     <div class="hero">
         <h1 id="t-hero-title">일본 세금 환급 계산기 2026</h1>
@@ -138,17 +142,54 @@
         <div class="advice-box" id="advice-box">대기 조언을 위해 금액을 입력하세요</div>
     </div>
 
+    <section class="rec-section" id="recSection" aria-label="다음에 확인할 추천 정보">
+        <div class="rec-section-head">
+            <h3>다음에 확인하면 도움이 됩니다</h3>
+            <span class="rec-hint" id="recHint">결과에 맞춰 추천</span>
+        </div>
+        <div class="rec-grid">
+            <a class="rec-card" data-rec="fee" href="/en/guide/department-store-fee/"><span class="rec-badge">추천</span><b>왜 10%가 아닐까요?</b><span>백화점 면세 수수료(약 1.55%)</span><small>지급 전 공제되는 경우 있음</small></a>
+            <a class="rec-card" data-rec="threshold" href="/en/guide/minimum-maximum/"><span class="rec-badge">추천</span><b>5,000엔 기준을 넘을 수 있을까?</b><span>같은 매장·같은 날 규칙</span><small>합산 가능한 경우 있음</small></a>
+            <a class="rec-card" data-rec="category" href="/en/guide/consumables-vs-general/"><span class="rec-badge">추천</span><b>일반 물품 vs 소모품</b><span>10%와 8%의 차이</span><small>분류에 따라 세율 달라짐</small></a>
+            <a class="rec-card" data-rec="compare" href="/en/tools/compare/"><span class="rec-badge">추천</span><b>줄 서기 전에 비교하세요</b><span>분할 결제 vs 합산 결제</span><small>차액을 바로 확인</small></a>
+        </div>
+    </section>
+
     <div class="share-stack">
         <button class="share-btn line" id="t-share-line" onclick="socialShare('line')">LINE에서 공유</button>
         <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">계산 링크 복사</button>
     </div>
 
-    <section class="seo-box" id="seoArea"></section>
+    <section class="seo-box" id="seoArea"><h2>일본 소비세 환급 FAQ (2026)</h2>
+    <p><strong>일본 국세청(NTA)의 최신 규정에 따르면</strong>, 외국인 관광객은 일본에서 쇼핑 시 특정 조건을 충족하면 면세 혜택을 받을 수 있습니다.</p>
+    <h3>1. 면세 기준은 얼마인가요？</h3>
+    <p><strong>일본 국세청(NTA)의 최신 규정에 따르면</strong>, 동일한 매장에서 하루 동안 <b>5,000엔</b>(세금 제외) 이상 구매 시 세금 환급을 받을 수 있습니다.</p>
+    <h3>2. 일반 물품 vs 소모품</h3>
+    <p>일반 물품(의류, 가전제품)의 세율은 10%이며, 소모품(식품, 화장품)의 세율은 8%입니다. <strong>일본 관광청(JTA) 가이드라인에서는</strong> 소모품은 면세 처리 후 특수 포장되며, 일본 내에서는 개봉할 수 없다고 명시하고 있습니다.</p>
+    <h3>3. 왜 환급액이 10%보다 적나요？</h3>
+    <p>대형 백화점(미츠코시, 타카시마야 등)은 보통 약 <b>1.55%</b>의 서비스 수수료를 공제합니다. <strong>일본 관광청(JTA) 가이드라인에서는</strong> 이는 일반적인 관행이라고 설명합니다. 본 도구는 ‘백화점’ 옵션을 통해 이를 반영합니다.</p>
+    <div class="formula-box">실제 환급액 = (세전 가격 × 세율) - (세전 가격 × 수수료율)</div>
+    <h3>관련 가이드 및 도구</h3>
+    <ul>
+      <li><a href="/en/guide/how-to-calculate/">일본 환급액 계산 방법 (영어)</a></li>
+      <li><a href="/en/guide/department-store-fee/">백화점 수수료가 환급액에 미치는 영향 (영어)</a></li>
+      <li><a href="/en/guide/minimum-maximum/">면세 최소 금액과 한도 (영어)</a></li>
+      <li><a href="/en/guide/common-mistakes/">면세 쇼핑 시 흔한 실수 (영어)</a></li>
+    </ul>
+    <div class="authority-module">
+      <h3>공식 정보 출처 및 참고 자료</h3>
+      <p>본 계산기의 로직은 일본 공식 기관이 발표한 규정을 엄격히 따릅니다. 가장 권위 있는 정보는 다음에서 확인하실 수 있습니다:</p>
+      <ul>
+        <li><strong>국세청 (NTA)</strong>: <a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm" target="_blank" rel="noopener">소비세 면세 제도에 관한 공식 안내 (일본어)</a></li>
+        <li><strong>관광청 (JTA)</strong>: <a href="https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/" target="_blank" rel="noopener">방일 외국인을 위한 면세 쇼핑 가이드 (일본어)</a></li>
+      </ul>
+      <p><small>참고: 정책은 업데이트될 수 있습니다. 위 공식 링크가 가장 정확한 정보를 제공합니다.</small></p>
+    </div></section>
 
     <div class="footer-links" style="text-align: center; margin-top: 20px;">
-        <a href="/ko/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">우리에 대해</a>
+        <a href="/ko/about/" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">우리에 대해</a>
         <span style="color: #D1D1D6;">|</span>
-        <a href="/ko/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">개인정보처리방침</a>
+        <a href="/ko/privacy/" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">개인정보처리방침</a>
         <span style="color: #D1D1D6;">|</span>
         <a href="/sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">사이트맵</a>
     </div>

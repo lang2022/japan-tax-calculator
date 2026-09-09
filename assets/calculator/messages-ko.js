@@ -1,9 +1,9 @@
 window.CALCULATOR_MESSAGES = {
-  pageTitle: "2026 일본 면세 계산기 - 일본 여행 쇼핑 세금 환급 도구",
+  pageTitle: "2026 일본 면세 계산기 - 쇼핑 세금 환급액 간편 계산 | RefundJapan",
   heroTitle: "2026 일본 면세 계산기",
-  heroDesc: "실시간 환율 및 백화점 수수료 자동 계산 기능 포함.",
-  auth: "공식 로직",
-  upd: "업데이트: 2026년 6월",
+  heroDesc: "실시간 환율 및 백화점 수수료를 반영한 예상 환급액입니다. 참고용으로 이용해 주세요.",
+  auth: "공식 규정 기반 예상치",
+  upd: "업데이트: 2026년 9월",
   amt: "구매 총액",
   incl: "세금 포함",
   excl: "세금 제외",
@@ -23,11 +23,11 @@ window.CALCULATOR_MESSAGES = {
   copyBtn: "링크 복사",
   copyOk: "복사되었습니다!",
   lowAmt: "면세 기준인 5,000엔까지 ${diff}엔 더 필요합니다",
-  highCap: "💡 최대 50만엔 면세 한도로 계산되었습니다",
-  adv0: "대기 조언을 위해 금액을 입력하세요",
-  adv1: "조언: 환급액이 적으니 대기가 길면 포기하세요",
-  adv2: "조언: 환급받으러 줄을 서는 것을 추천합니다",
-  adv3: "조언: 환급액이 크니 반드시 줄을 서세요!",
+  highCap: "최대 50만엔 면세 한도로 계산되었습니다",
+  adv0: "금액을 입력하면 환급 팁이 표시됩니다",
+  adv1: "조언: 환급액이 적으니 대기가 길면 건너뛰어도 괜찮습니다",
+  adv2: "조언: 환급받을 만한 금액입니다. 줄을 서는 것을 추천합니다",
+  adv3: "조언: 환급액이 크니 꼭 환급을 받으세요!",
   adRate: "실시간 환율 정보",
   adJpy: "오늘의 JPY/KRW 환율은 약",
   shareL: "LINE으로 공유",
@@ -40,6 +40,13 @@ window.CALCULATOR_MESSAGES = {
     <h3>3. 왜 환급액이 10%보다 적나요？</h3>
     <p>대형 백화점(미츠코시, 타카시마야 등)은 보통 약 <b>1.55%</b>의 서비스 수수료를 공제합니다. <strong>일본 관광청(JTA) 가이드라인에서는</strong> 이는 일반적인 관행이라고 설명합니다. 본 도구는 ‘백화점’ 옵션을 통해 이를 반영합니다.</p>
     <div class="formula-box">실제 환급액 = (세전 가격 × 세율) - (세전 가격 × 수수료율)</div>
+    <h3>관련 가이드 및 도구</h3>
+    <ul>
+      <li><a href="/en/guide/how-to-calculate/">일본 환급액 계산 방법 (영어)</a></li>
+      <li><a href="/en/guide/department-store-fee/">백화점 수수료가 환급액에 미치는 영향 (영어)</a></li>
+      <li><a href="/en/guide/minimum-maximum/">면세 최소 금액과 한도 (영어)</a></li>
+      <li><a href="/en/guide/common-mistakes/">면세 쇼핑 시 흔한 실수 (영어)</a></li>
+    </ul>
     <div class="authority-module">
       <h3>공식 정보 출처 및 참고 자료</h3>
       <p>본 계산기의 로직은 일본 공식 기관이 발표한 규정을 엄격히 따릅니다. 가장 권위 있는 정보는 다음에서 확인하실 수 있습니다:</p>

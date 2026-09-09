@@ -4,3 +4,22 @@ a{color:inherit}
 .footer-links{margin-top:20px;text-align:center}
 .footer-links a{font-size:13px;color:var(--text-soft,var(--text-sec,#64748b));text-decoration:none;margin:0 8px}
 .footer-disclaimer{margin:18px auto 0;max-width:760px;text-align:center;font-size:12px;line-height:1.7;color:var(--text-faint,var(--text-sec,#94a3b8))}
+.home-nav{display:flex;gap:6px;align-items:center;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:6px 0 14px;padding-bottom:2px}
+.home-nav::-webkit-scrollbar{display:none}
+.home-nav a{font-size:12px;font-weight:700;color:var(--text-sec);text-decoration:none;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid #E5E5EA;white-space:nowrap;flex-shrink:0;transition:all .2s}
+.home-nav a:hover{border-color:var(--primary);color:var(--primary);background:#FFF5F5}
+.home-nav a.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.rec-section{background:var(--card);border:1px solid #E5E5EA;border-radius:var(--radius);padding:16px;margin-bottom:20px}
+.rec-section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.rec-section h3{font-size:14px;font-weight:800;margin:0;color:var(--text)}
+.rec-section .rec-hint{font-size:11px;font-weight:700;color:var(--text-sec);background:#F2F2F7;padding:4px 8px;border-radius:999px}
+.rec-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:480px){.rec-grid{grid-template-columns:1fr}}
+.rec-card{border:1px solid #E5E5EA;border-radius:12px;padding:12px 12px 11px;text-decoration:none;display:flex;flex-direction:column;gap:4px;background:#F8F9FA;position:relative;transition:all .2s}
+.rec-card:hover{border-color:var(--primary);background:#FFF5F5;transform:translateY(-1px)}
+.rec-card.is-highlight{border-color:var(--primary);background:#FFF5F5;box-shadow:0 0 0 3px rgba(230,57,70,.08)}
+.rec-badge{font-size:10px;font-weight:800;letter-spacing:.3px;color:#fff;background:var(--primary);padding:2px 7px;border-radius:999px;align-self:flex-start;display:none}
+.rec-card.is-highlight .rec-badge{display:inline-flex}
+.rec-card b{font-size:13px;color:var(--text);line-height:1.35}
+.rec-card span{font-size:11px;color:var(--text-sec);line-height:1.4}
+.rec-card small{font-size:10px;color:#9aa0a8}

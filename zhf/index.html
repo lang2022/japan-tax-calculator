@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <meta name="description" content="即時稅務退稅計算，包含即時匯率和費用檢測功能">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="日本稅務退稅計算器 2026">
     <meta property="og:description" content="即時稅務退稅計算，包含即時匯率和費用檢測功能">
     <meta property="og:image" content="/assets/og/og-image.jpg">
@@ -49,7 +49,7 @@
     }
     </script>
 
-    <title>日本稅務退稅計算器 2026 - 官方免稅指南</title>
+    <title>日本稅務退稅計算器 2026 - 免稅購物指南</title>
 
     <link rel="canonical" href="https://refundjapan.com/zhf/" />
     <link rel="alternate" hreflang="zh-Hans" href="https://refundjapan.com/zhj/" />
@@ -58,7 +58,7 @@
     <link rel="alternate" hreflang="ja" href="https://refundjapan.com/ja/" />
     <link rel="alternate" hreflang="ko" href="https://refundjapan.com/ko/" />
     <link rel="alternate" hreflang="th" href="https://refundjapan.com/th/" />
-    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://refundjapan.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/calculator/home-common.css">
     <link rel="stylesheet" href="/assets/calculator/home-compact.css">
@@ -77,12 +77,18 @@
 
 <div class="app">
     <div class="auth-badge">
-        <span id="t-upd">更新日期：2026年6月</span> • <span id="t-auth">官方邏輯</span>
+        <span id="t-upd">更新日期：2026年9月</span> • <span id="t-auth">基於官方規則估算</span>
     </div>
 
     <header>
-        <a href="/zhf/" class="logo" style="color: inherit; text-decoration: none;">TAXFREE.JP</a>
+        <a href="/zhf/" class="logo" style="color: inherit; text-decoration: none;">RefundJapan</a>
     </header>
+    <nav class="home-nav" aria-label="Site navigation">
+        <a href="/zhf/" class="active" aria-current="page">計算器</a>
+        <a href="/zhf/guide/how-to-calculate/">指南</a>
+        <a href="/zhf/guide/department-store-fee/">手續費</a>
+        <a href="/zhf/guide/common-mistakes/">常見錯誤</a>
+    </nav>
 
     <div class="hero">
         <h1 id="t-hero-title">日本稅款退還計算器 2026</h1>
@@ -143,12 +149,51 @@
         <button class="share-btn copy-link" onclick="socialShare('native')" id="t-copy-btn">複製計算鏈接</button>
     </div>
 
-    <section class="seo-box" id="seoArea"></section>
+    <section class="rec-section" id="recSection" aria-label="下一步該看什麼">
+        <div class="rec-section-head">
+            <h3>下一步該看什麼</h3>
+            <span class="rec-hint" id="recHint">根據你的計算結果推薦</span>
+        </div>
+        <div class="rec-grid">
+            <a class="rec-card" data-rec="fee" href="/zhf/guide/department-store-fee/"><span class="rec-badge">推薦</span><b>為什麼實拿少於 10%</b><span>百貨公司免稅手續費約 1.55%</span><small>到手前會先扣</small></a>
+            <a class="rec-card" data-rec="threshold" href="/en/guide/minimum-maximum/"><span class="rec-badge">推薦</span><b>還能湊夠 5,000 日圓嗎？</b><span>同店同日規則與合併結帳</span><small>英文說明含更多範例</small></a>
+            <a class="rec-card" data-rec="category" href="/en/guide/consumables-vs-general/"><span class="rec-badge">推薦</span><b>一般物品 vs 消耗品</b><span>10% 與 8% 的差別與封裝</span><small>類別決定稅率</small></a>
+            <a class="rec-card" data-rec="compare" href="/en/tools/compare/"><span class="rec-badge">推薦</span><b>先對比，再排隊</b><span>分開結帳 vs 合併結帳</span><small>立刻看到差距</small></a>
+        </div>
+    </section>
+
+    <section class="seo-box" id="seoArea"><h2>日本免稅購物快速指南 2026</h2>
+    <p><strong>如果你正準備在日本購物，這個計算器可以幫你快速估算退稅後實際能拿回多少</strong>，同時把即時匯率與百貨公司手續費一起算進去。</p>
+    <h3>1. 免稅門檻</h3>
+    <p>一般來說，在同一家店、同一天消費滿 <b>5,000 日圓（未稅）</b>，才有機會辦理免稅。本計算器就是以這個常見門檻作為起點。</p>
+    <h3>2. 一般物品與消耗品的差別</h3>
+    <p>一般物品通常按 <b>10%</b> 稅率估算，消耗品則常見為 <b>8%</b>。部分消耗品在結帳後會被特殊封裝，離開日本前不建議拆封，實際仍以店家作業方式為準。</p>
+    <h3>3. 為什麼實拿金額會比想像中少？</h3>
+    <p>部分大型百貨公司會先扣除一筆免稅手續費，常見大約是 <b>1.55%</b>。所以最後真正拿到的金額，往往不會剛好等於名義稅率。</p>
+    <div class="formula-box">預估退稅額 =（未稅金額 × 稅率）-（未稅金額 × 手續費率）</div>
+    <h3>延伸閱讀</h3>
+    <p>如果你想進一步了解退稅規則、百貨公司手續費、常見錯誤或門檻細節，目前更完整的說明頁以英文整理為主。即使不看英文內容，你也可以先用這個計算器快速掌握大致金額；若想進一步確認細節，再點進以下頁面閱讀即可。</p>
+    <ul>
+      <li><a href="/zhf/guide/how-to-calculate/">退稅怎麼算？</a></li>
+      <li><a href="/zhf/guide/department-store-fee/">百貨公司手續費怎麼影響實拿金額？</a></li>
+      <li><a href="/en/guide/consumables-vs-general/">一般物品與消耗品差在哪裡？（英文說明）</a></li>
+      <li><a href="/zhf/guide/common-mistakes/">哪些常見錯誤最容易影響退稅？</a></li>
+      <li><a href="/en/guide/minimum-maximum/">免稅門檻與資格重點（英文說明）</a></li>
+    </ul>
+    <div class="authority-module">
+      <h3>官方資訊來源</h3>
+      <p>如果你想查最權威、最即時的規定，可以直接參考日本官方機構的說明：</p>
+      <ul>
+        <li><strong>日本國稅廳 (NTA)</strong>: <a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigen.htm" target="_blank" rel="noopener">消費稅免稅制度官方說明（日文）</a></li>
+        <li><strong>日本觀光廳 (JTA)</strong>: <a href="https://www.mlit.go.jp/kankocho/visitjapan/ja/tax-free/" target="_blank" rel="noopener">訪日旅客免稅購物指南（日文）</a></li>
+      </ul>
+      <p><small>實際退稅流程、封裝要求與手續費仍可能因店家而異，因此建議把這個工具視為現場購物前的實用估算，而不是最終報價。</small></p>
+    </div></section>
 
     <div class="footer-links" style="text-align: center; margin-top: 20px;">
-        <a href="/zhf/about.html" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">關於我們</a>
+        <a href="/zhf/about/" id="t-link-about" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">關於我們</a>
         <span style="color: #D1D1D6;">|</span>
-        <a href="/zhf/privacy.html" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">隱私政策</a>
+        <a href="/zhf/privacy/" id="t-link-privacy" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">隱私政策</a>
         <span style="color: #D1D1D6;">|</span>
         <a href="/sitemap.xml" style="color: var(--text-sec); text-decoration: none; font-size: 13px; margin: 0 8px;">網站地圖</a>
     </div>

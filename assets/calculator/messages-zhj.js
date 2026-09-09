@@ -1,9 +1,9 @@
 window.CALCULATOR_MESSAGES = {
-  pageTitle: "2026 日本退税计算器 - 购物免税额度实时计算",
+  pageTitle: "2026 日本退税计算器 - 购物免税额度实时估算 | RefundJapan",
   heroTitle: "2026 日本退税计算器",
-  heroDesc: "支持实时汇率转换与百货公司手续费精准扣除。",
-  auth: "官方算法",
-  upd: "更新于: 2026年6月",
+  heroDesc: "支持实时汇率转换与百货公司手续费估算，结果仅供参考。",
+  auth: "基于官方规则估算",
+  upd: "更新于: 2026年9月",
   amt: "购买总额",
   incl: "含税价",
   excl: "不含税",
@@ -23,8 +23,8 @@ window.CALCULATOR_MESSAGES = {
   copyBtn: "复制计算链���",
   copyOk: "链接已复制",
   lowAmt: "还差 ${diff} JPY 即可达到 5,000 JPY 退税门槛",
-  highCap: "💡 已按最高 50 万日元免税额度计算",
-  adv0: "输入金额以获取排队建议",
+  highCap: "已按最高 50 万日元免税额度计算",
+  adv0: "输入金额即可获得退税建议",
   adv1: "提示：金额较小，排队时间长建议放弃",
   adv2: "提示：金额适中，建议排队退税",
   adv3: "提示：金额很大，务必排队退税！",
@@ -40,6 +40,13 @@ window.CALCULATOR_MESSAGES = {
     <h3>3. 为什么退税金额少于 10%？</h3>
     <p>大型百货公司（如三越、高岛屋）通常会扣除约 <b>1.55%</b> 的服务手续费。本工具支持“百货公司”选项，自动计算最终到手净额。</p>
     <div class="formula-box">实际退税 = (不含税价格 × 税率) - (不含税价格 × 手续费率)</div>
+    <h3>延伸阅读</h3>
+    <ul>
+      <li><a href="/zhj/guide/how-to-calculate/">日本退税怎么算？</a></li>
+      <li><a href="/zhj/guide/department-store-fee/">百货公司手续费如何影响退税？</a></li>
+      <li><a href="/zhj/guide/common-mistakes/">免税购物常见错误</a></li>
+      <li><a href="/en/guide/minimum-maximum/">免税门槛与资格重点（英文说明）</a></li>
+    </ul>
     <div class="authority-module">
       <h3>官方信息来源与参考</h3>
       <p>本计算器的逻辑基于日本国税厅的官方规定。如需查阅最权威、最详细的法律条文，请访问以下链接（日文）：</p>
